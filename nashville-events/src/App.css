@@ -6,24 +6,36 @@
 }
 
 body{
-  background-color: #282c34 !important;
+  background-color: #fffffa !important;
 }
 
   
 .navbar {
-  background-color: #282c34;
-  color: white;
-  font-size: 30px;
+  background-color: #2d3142!important;
+  color: #fffffa !important;
+  font-size: 27px;
   font-family: 'Aleo';
-  padding-left:5% !important;
-  padding-right:5% !important;
+  padding-left:7.5% !important;
+  padding-right:7.5% !important;
+}
+.text-logo{
+  display:inline-block;
+}
+
+.navbar img{
+  fill: white;
+}
+.navbar b{
+  margin-left: .75%;
 }
 
 .main-content{
-  background-color: #282c34;
+  margin-top: 1%;
+  background-color: #fffffa;
 }
 .main-content h1{
+  text-align: left;
   font-family: 'Aleo';
   font-size: 25px;
-  color:white;
+  color:#ef8354;
 }
