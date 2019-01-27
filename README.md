@@ -1,1 +1,2 @@
-# CS4279-Affordable-Housing
+# CS4279-Affordable-Housing Events Module
+

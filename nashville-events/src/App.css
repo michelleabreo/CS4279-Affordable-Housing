@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Aleo:700|Montserrat:500');
+
+
+.App {
+  text-align: center;
+}
+
+body{
+  background-color: #282c34 !important;
+}
+
+  
+.navbar {
+  background-color: #282c34;
+  color: white;
+  font-size: 30px;
+  font-family: 'Aleo';
+  padding-left:5% !important;
+  padding-right:5% !important;
+}
+
+.main-content{
+  background-color: #282c34;
+}
+.main-content h1{
+  font-family: 'Aleo';
+  font-size: 25px;
+  color:white;
+}
