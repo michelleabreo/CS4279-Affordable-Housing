@@ -12,8 +12,7 @@ body{
   
 .navbar {
   background-color: #2d3142!important;
-  color: #fffffa !important;
-  font-size: 27px;
+  font-size: 30px;
   font-family: 'Aleo';
   padding-left:7.5% !important;
   padding-right:7.5% !important;
@@ -22,11 +21,17 @@ body{
   display:inline-block;
 }
 
-.navbar img{
-  fill: white;
-}
 .navbar b{
   margin-left: .75%;
+  color: #fffffa !important;
+}
+.navbar a{
+  color: #fffffa !important;
+  font-size: 15px !important;
+  font-family: 'Montserrat';
+}
+.navbar a:hover{
+  color: #bfc0c0 !important;
 }
 
 .main-content{
@@ -35,7 +40,7 @@ body{
 }
 .main-content h1{
   text-align: left;
-  font-family: 'Aleo';
+  font-family: 'Montserrat';
   font-size: 25px;
   color:#ef8354;
 }
