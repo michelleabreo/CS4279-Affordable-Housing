@@ -1,5 +1,5 @@
 # Maps Page
-The page currently simply displays a map centered on Nashville, displaying the labelled neighborhoods of Nashville as provided by [Data.Nashville.gov](https://data.nashville.gov/Metro-Government/Neighborhood-Association-Boundaries-GIS-/qytv-2cu8)
+The page currently simply displays a map centered on Nashville, displaying the labelled neighborhoods of Nashville as provided by [data.nashville.gov](https://data.nashville.gov/Metro-Government/Neighborhood-Association-Boundaries-GIS-/qytv-2cu8)
 
 The page was implemented in HTML/css, and [Leaflet.js](https://leafletjs.com) was used to create and display a map of Nashville with the neighborhood overlay.
 
