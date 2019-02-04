@@ -1,0 +1,18 @@
+[
+    {
+        "name":"Bank Hotel",
+        "location": "Östermalm, Stockholm",
+        "price": 253,
+        "rating": 5,
+        "image": "../Assets/bankHotel.png",
+        "map": "../Assets/map.png"
+    }
+    {
+        "name":"Aria Hotel",
+        "location": "Prague, Czech Republic",
+        "price": 353,
+        "rating": 4.5,
+        "image": "../Assets/ariaHotel.png",
+        "map": "../Assets/map.png"
+    }
+]

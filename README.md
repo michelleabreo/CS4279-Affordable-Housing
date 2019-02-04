@@ -1,3 +1,6 @@
 # CS4279-Affordable-Housing
 
-Landing page with login and register links (static HTML pages for now)
+
+Design Doc for Events Page
+https://docs.google.com/document/d/1ZGzu4qhFTeoym8UGNH3-p2hilM-3YvcPs3mrytAOEDw/edit
+
