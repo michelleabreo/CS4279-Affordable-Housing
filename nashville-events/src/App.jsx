@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Navbar, NavItem, Nav } from 'react-bootstrap';
 import EventList from './EventList';
 import NashNav from './NashNav';
 
