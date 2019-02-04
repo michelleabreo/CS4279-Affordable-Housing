@@ -37,6 +37,7 @@ class BudgetSheet extends React.Component {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.changePercentage = this.changePercentage.bind(this);
     }
 
     handleChange(event) {
@@ -48,6 +49,7 @@ class BudgetSheet extends React.Component {
     }
     
     changePercentage(subtract, field) {
+        console.log("changePercentage called");
         let multiplier = subtract === 0 ? 1 : -1;
         let change = .005 * multiplier;
         let tmpPercents = this.state.percentages;
@@ -113,6 +115,18 @@ class BudgetSheet extends React.Component {
             totalPercent += percentageArray[i];
         }
 
+        let ButtonSet = (parameters) => {
+            let name = parameters.name;
+            return(
+                <div>
+                    <button onClick={this.changePercentage.bind(this, 1, name)}>-</button>
+                    <button onClick={this.changePercentage.bind(this, 0, name)}>+</button>
+                </div>
+            );
+        };
+
+
+
         return (
             <form onSubmit={this.handleSubmit}>
                 <label>
@@ -125,49 +139,40 @@ class BudgetSheet extends React.Component {
                     <li>
                         <div>
                         <BudgetAllocation name="Housing" percent={percentages.housing} total={salary}/>
-                            <button onClick = {this.changePercentage.bind(this, 1, "housing")}>-</button>
-                            <button onClick={this.changePercentage.bind(this,0, "housing")}>+</button>
+                        <ButtonSet name="housing"/>
                         </div>
                     </li>
                     <li>
                         <BudgetAllocation name="Insurance" percent={percentages.insurance} total={salary}/>
-                            <button onClick = {this.changePercentage.bind(this, 1, "insurance")}>-</button>
-                            <button onClick={this.changePercentage.bind(this,0, "insurance")}>+</button>
+                        <ButtonSet name="insurance"/>
                     </li>
                     <li>
                         <BudgetAllocation name="Food" percent={percentages.food} total={salary}/>
-                        <button onClick = {this.changePercentage.bind(this, 1, "food")}>-</button>
-                        <button onClick={this.changePercentage.bind(this,0, "food")}>+</button>
+                        <ButtonSet name="food"/>
                     </li>
                     <li>
                         <BudgetAllocation name="Transportation" percent={percentages.transportation} total={salary}/>
-                        <button onClick = {this.changePercentage.bind(this, 1, "transportation")}>-</button>
-                        <button onClick={this.changePercentage.bind(this,0, "transportation")}>+</button>
+                        <ButtonSet name="transportation"/>
                     </li>
                     <li>
                         <BudgetAllocation name="Utilities" percent={percentages.utilities} total={salary}/>
-                        <button onClick = {this.changePercentage.bind(this, 1, "utilities")}>-</button>
-                        <button onClick={this.changePercentage.bind(this,0, "utilities")}>+</button>
+                        <ButtonSet name="utilities"/>
                     </li>
                     <li>
                         <BudgetAllocation name="Savings" percent={percentages.savings} total={salary}/>
-                        <button onClick = {this.changePercentage.bind(this, 1, "savings")}>-</button>
-                        <button onClick={this.changePercentage.bind(this,0, "savings")}>+</button>
+                        <ButtonSet name="savings"/>
                     </li>
                     <li>
                         <BudgetAllocation name="Fun" percent={percentages.fun} total={salary}/>
-                        <button onClick = {this.changePercentage.bind(this, 1, "fun")}>-</button>
-                        <button onClick={this.changePercentage.bind(this,0, "fun")}>+</button>
+                        <ButtonSet name="fun"/>
                     </li>
                     <li>
                         <BudgetAllocation name="Clothing" percent={percentages.clothing} total={salary}/>
-                        <button onClick = {this.changePercentage.bind(this, 1, "clothing")}>-</button>
-                        <button onClick={this.changePercentage.bind(this,0, "clothing")}>+</button>
+                        <ButtonSet name="clothing"/>
                     </li>
                     <li>
                         <BudgetAllocation name="Personal" percent={percentages.personal} total={salary}/>
-                        <button onClick = {this.changePercentage.bind(this, 1, "personal")}>-</button>
-                        <button onClick={this.changePercentage.bind(this,0, "personal")}>+</button>
+                        <ButtonSet name="personal"/>
                     </li>
                 </ul>
                 <h2>
@@ -182,10 +187,8 @@ class BudgetSheet extends React.Component {
 class BudgetAllocation extends React.Component {
     constructor(props) {
         super(props);
-        this.props = ({name: "", total: {}, percent: {}, handler: {}});
+        this.props = ({name: "", total: {}, percent: {}});
     }
-
-
 
     render() {
         const budgetSection = this.props.name;
@@ -207,27 +210,5 @@ function numberWithCommas(x) {
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
-
-class EditPercentageButtons extends React.Component {
-    constructor(props) {
-        super(props);
-        this.props = ({field: ""});
-    }
-
-
-    render() {
-        return(
-            <body>
-                <button>
-                    <p>-</p>
-                </button>
-                &nbsp;&nbsp;
-                <button>
-                    <p>+</p>
-                </button>
-            </body>
-        );
-    }
-}
 
 export default BudgetPage;
