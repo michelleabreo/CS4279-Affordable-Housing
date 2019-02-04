@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class App extends Component {
+class BudgetPage extends Component {
     render() {
         return (
             <div className="Budget Page">
@@ -170,4 +170,4 @@ class EditPercentageButtons extends React.Component {
     }
 }
 
-export default App;
+export default BudgetPage;
