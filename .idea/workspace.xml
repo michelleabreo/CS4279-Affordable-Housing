@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fee32aa-fc51-4e33-8d0f-03f37b0a0a02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget-page/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/budget-page/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/budget-page/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/budget-page/src/BudgetPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/budget-page/src/BudgetPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,17 +18,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/budget-page/public/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+            <state relative-caret-position="390">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/budget-page/src/App.js">
+        <entry file="file://$PROJECT_DIR$/budget-page/src/BudgetPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="319">
+              <caret line="175" column="19" lean-forward="true" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
               <folding>
                 <element signature="n#!!block;n#numberWithCommas#0" />
               </folding>
@@ -39,13 +37,11 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget-page/src/App.test.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/housing-app/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor />
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -54,7 +50,7 @@
         <entry file="file://$PROJECT_DIR$/budget-page/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -92,6 +88,8 @@
         <option value="$PROJECT_DIR$/budget/src/index.js" />
         <option value="$PROJECT_DIR$/budget-page/public/index.html" />
         <option value="$PROJECT_DIR$/budget-page/src/App.js" />
+        <option value="$PROJECT_DIR$/budget-page/src/App.test.js" />
+        <option value="$PROJECT_DIR$/budget-page/src/BudgetPage.js" />
       </list>
     </option>
   </component>
@@ -118,12 +116,6 @@
               <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
               <item name="budget-page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
-              <item name="budget-page" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
@@ -168,7 +160,7 @@
       <workItem from="1548133120026" duration="13378000" />
       <workItem from="1548871189552" duration="1199000" />
       <workItem from="1549307490167" duration="23000" />
-      <workItem from="1549307542129" duration="4416000" />
+      <workItem from="1549307542129" duration="7560000" />
     </task>
     <task id="LOCAL-00001" summary="First draft budget page">
       <created>1548281770212</created>
@@ -177,14 +169,29 @@
       <option name="project" value="LOCAL" />
       <updated>1548281770212</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="First draft budget page">
+      <created>1549316657182</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1549316657183</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Changed name from App.js to BudgetPage.js">
+      <created>1549316781579</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1549316781579</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19933000" />
+    <option name="totallyTimeSpent" value="23077000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24947146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -211,7 +218,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First draft budget page" />
-    <option name="LAST_COMMIT_MESSAGE" value="First draft budget page" />
+    <MESSAGE value="Changed name from App.js to BudgetPage.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed name from App.js to BudgetPage.js" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/budget.js" />
@@ -246,17 +254,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/budget-page/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -268,18 +269,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/budget-page/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        <state relative-caret-position="75">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/src/App.js">
+    <entry file="file://$PROJECT_DIR$/housing-app/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/budget-page/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <caret line="3191" column="4" selection-start-line="3191" selection-start-column="4" selection-end-line="3191" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/budget-page/src/BudgetPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="175" column="19" lean-forward="true" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
           <folding>
             <element signature="n#!!block;n#numberWithCommas#0" />
           </folding>
