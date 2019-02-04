@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+import '../events-page/events.css';
 import { Navbar, NavItem, Nav } from 'react-bootstrap';
 
 export default function NashNav() {
