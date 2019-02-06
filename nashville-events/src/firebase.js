@@ -1,4 +1,5 @@
-import firebase from 'firebase';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
 
 const config = {
   apiKey: 'AIzaSyC3VoNgu4Vpep3bUWK6_kMUb3Ag_9Pnu6g',
@@ -8,5 +9,8 @@ const config = {
   storageBucket: 'housing-project-7e733.appspot.com',
   messagingSenderId: '378164429411',
 };
-firebase.initializeApp(config);
+
+const defaultConfig = firebase.initializeApp(config);
+console.log(defaultConfig.name);
+
 export default firebase;

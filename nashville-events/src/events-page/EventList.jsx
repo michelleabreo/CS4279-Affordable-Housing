@@ -1,9 +1,17 @@
 import React from 'react';
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
-import firebase from '../firebase.js';
+import firebase from '../firebase';
+
+const db = firebase.firestore();
 
 export default function EventList() {
-  const events = firebase.database().ref('nashville_events');
+  db.collection('nashville_events')
+    .get()
+    .then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        console.log(`${doc.id} => ${doc.data().Name}`);
+      });
+    });
   return (
     <ListGroup>
       <ListGroupItem header="In the Round" href="#">

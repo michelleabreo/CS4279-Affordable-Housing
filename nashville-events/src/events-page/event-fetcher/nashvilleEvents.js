@@ -1,9 +1,8 @@
-import firebase from '../firebase.js';
+import firebase from '../../firebase';
 
 const request = require('request');
 const cheerio = require('cheerio');
 
-const events = firebase.database().ref('nashville_events');
 
 const url = 'https://www.visitmusiccity.com/visitors/events/upcomingevents';
 
@@ -22,6 +21,7 @@ request(url, (error, response, body) => {
       });
     console.log(`URL: ${url}`);
     console.log(`Title: ${title}`);
+    console.log(events)
   } else {
     console.log(`We’ve encountered an error: ${error}`);
   }
