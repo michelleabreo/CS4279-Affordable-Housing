@@ -1,10 +1,7 @@
 import React from 'react';
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
-import firebase from '../firebase';
-
 
 export default function EventList() {
-
   return (
     <ListGroup>
       <ListGroupItem header="In the Round" href="#">

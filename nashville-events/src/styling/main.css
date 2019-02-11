@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css?family=Aleo:700|Montserrat:500");
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+/* Top Navbar Styling */
+.navbar {
+  position: fixed;
+  background-color: transparent;
+  background: transparent;
+  border-color: transparent;
+}
+.navbar li {
+  color: #000;
+}
+
+.navbar b {
+  font-family: "Aleo";
+  font-size: 30px;
+  margin-left: 0.75%;
+  color: #fffffa !important;
+}
+
+.text-logo {
+  display: inline-block;
+}
+.navbar a {
+  color: #fffffa !important;
+  font-size: 15px !important;
+  font-family: "Montserrat";
+}
+.navbar a:hover {
+  color: #bfc0c0 !important;
+}
