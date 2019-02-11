@@ -1,9 +1,14 @@
 import React, { Component } from 'react';
-import NashNav from './common-components/NashNav';
+import Map from './common-components/Map';
+
 
 class App extends Component {
   render() {
-    return <NashNav />;
+    return(
+    <div>
+      <Map/>
+    </div>
+    );
   }
 }
 
