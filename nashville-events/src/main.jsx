@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import 'bootstrap/js/dist/util';
 import 'bootstrap/js/dist/dropdown';
+import Footer from './components/Footer';
 import Home from './components/Home';
 import EventList from './components/Events';
 import BudgetPage from './components/BudgetPage';
@@ -55,6 +56,7 @@ export default function Main() {
           <Route path="/events" component={EventList} />
           <Route path="/budget" component={BudgetPage} />
         </Switch>
+        <Footer />
       </div>
     </Router>
   );
