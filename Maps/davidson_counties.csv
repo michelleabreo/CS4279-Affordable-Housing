@@ -1,0 +1,663 @@
+,State,County,City,Name,RegionID
+0,TN,Davidson,Nashville,Cloverhill,225896
+1,TN,Davidson,Nashville,Germantown,226807
+2,TN,Davidson,Nashville,Scottsboro,229588
+3,TN,Davidson,Nashville,Sherwood Forest,229697
+4,TN,Davidson,Nashville,Bakers Grove,272842
+5,TN,Davidson,Nashville,Bells Bend,272926
+6,TN,Davidson,Nashville,Buena Vista Heights,273085
+7,TN,Davidson,Nashville,Capitol View,273133
+8,TN,Davidson,Nashville,Elizabeth Park,273626
+9,TN,Davidson,Nashville,Hillwood Estates,274030
+10,TN,Davidson,Nashville,Inglewood (Riverwood),274096
+11,TN,Davidson,Nashville,Sheffield on the Harpeth,275357
+12,TN,Davidson,Nashville,Sylvan Park,275657
+13,TN,Davidson,Nashville,Whites Bend,276059
+14,TN,Davidson,Nashville,Woodycrest,276152
+15,TN,Davidson,Nashville,Centenary,276243
+16,TN,Davidson,Nashville,Poplar Creek Estates,276518
+17,TN,Davidson,Nashville,West Meade Park,276650
+18,TN,Davidson,Nashville,Devonshire,416136
+19,TN,Davidson,Nashville,Kenner Manor,416141
+20,TN,Davidson,Nashville,Royal Oaks,416143
+21,TN,Davidson,Nashville,Sunset Place,416150
+22,TN,Davidson,Nashville,Whitworth,416152
+23,TN,Davidson,Nashville,Hillwood Heights,416159
+24,TN,Davidson,Nashville,Beacon Square,416161
+25,TN,Davidson,Nashville,Citizens Protecting Revitalization,416193
+26,TN,Davidson,Nashville,Montcastle Estates,416200
+27,TN,Davidson,Nashville,Hickory Hills,416202
+28,TN,Davidson,Nashville,Sugar Valley,416209
+29,TN,Davidson,Nashville,Harpeth View,416211
+30,TN,Davidson,Nashville,Christiansted Valley,416216
+31,TN,Davidson,Nashville,Barnes Cove,416218
+32,TN,Davidson,Nashville,Highlands of Brentwood,416225
+33,TN,Davidson,Nashville,Brentwood Villa,416227
+34,TN,Davidson,Nashville,Highlands,416234
+35,TN,Davidson,Nashville,Montgomery Place,416236
+36,TN,Davidson,Nashville,Hanover Park,416241
+37,TN,Davidson,Nashville,Seven Springs,416243
+38,TN,Davidson,Nashville,Granberry Heights,416250
+39,TN,Davidson,Nashville,Carousel Farm,416252
+40,TN,Davidson,Nashville,Stone Box Creek,416259
+41,TN,Davidson,Nashville,Hickory Place Townhomes,416261
+42,TN,Davidson,Nashville,Villages of Brentwood,416266
+43,TN,Davidson,Nashville,Weatherstone,416268
+44,TN,Davidson,Nashville,Hillview Estates,416275
+45,TN,Davidson,Nashville,Hallmark Condos,416277
+46,TN,Davidson,Nashville,Hickory Valley,416284
+47,TN,Davidson,Nashville,Mt. View Road Citizens Link,416286
+48,TN,Davidson,Nashville,Clairmont,416291
+49,TN,Davidson,Nashville,Haywood Hills,416293
+50,TN,Davidson,Nashville,Windhaven Shores,416295
+51,TN,Davidson,Nashville,Mt. View Subdivision,416400
+52,TN,Davidson,Nashville,Haywood Lane,416402
+53,TN,Davidson,Nashville,Locustwood,416409
+54,TN,Davidson,Nashville,Kensal Green,416411
+55,TN,Davidson,Nashville,Long Hunter Chase,416418
+56,TN,Davidson,Nashville,Barclay Square,416420
+57,TN,Davidson,Nashville,Pebble Creek,416425
+58,TN,Davidson,Nashville,Towne Village,416427
+59,TN,Davidson,Nashville,Birkdale Place,416434
+60,TN,Davidson,Nashville,Magnum Heights,416436
+61,TN,Davidson,Nashville,Beverly Heights,416443
+62,TN,Davidson,Nashville,Chelsea Village,416445
+63,TN,Davidson,Nashville,Kindall Park,416450
+64,TN,Davidson,Nashville,Hillbrook,416452
+65,TN,Davidson,Nashville,Smith Springs Townhomes,416459
+66,TN,Davidson,Nashville,Barcelona Condos,416461
+67,TN,Davidson,Nashville,Pinnacle Point,416468
+68,TN,Davidson,Nashville,Oakrest Condos,416470
+69,TN,Davidson,Nashville,Harbour Town,416475
+70,TN,Davidson,Nashville,Ransom Park,416477
+71,TN,Davidson,Nashville,Priest Lake Park,416484
+72,TN,Davidson,Nashville,Town Park Estates,416486
+73,TN,Davidson,Nashville,Grandview Heights,416493
+74,TN,Davidson,Nashville,Stardust Acres,416495
+75,TN,Davidson,Nashville,Four Mables Condos,416500
+76,TN,Davidson,Nashville,Russwurm Heights,416502
+77,TN,Davidson,Nashville,Patricia Heights,416509
+78,TN,Davidson,Nashville,Trailwood,416511
+79,TN,Davidson,Nashville,Williams Bend Townhomes,416518
+80,TN,Davidson,Nashville,Lakeridge,416520
+81,TN,Davidson,Nashville,Spence Lane Homeowners,416525
+82,TN,Davidson,Nashville,Happy Acres,416527
+83,TN,Davidson,Nashville,Waterfalls Park,416534
+84,TN,Davidson,Nashville,Martinwood Heights,416536
+85,TN,Davidson,Nashville,Elm Hill Acres,416543
+86,TN,Davidson,Nashville,Windchase,416545
+87,TN,Davidson,Nashville,Clovernook,416550
+88,TN,Davidson,Nashville,Baypointe,416552
+89,TN,Davidson,Nashville,Hunter's Point,416554
+90,TN,Davidson,Nashville,Colonial Village,416559
+91,TN,Davidson,Nashville,Dahlia Gardens,416561
+92,TN,Davidson,Nashville,Capitol Hill Area,416568
+93,TN,Davidson,Nashville,Roxborough,416570
+94,TN,Davidson,Nashville,Villages of Riverwood,416575
+95,TN,Davidson,Nashville,Riverpoint,416577
+96,TN,Davidson,Nashville,Rivercrest,416579
+97,TN,Davidson,Nashville,Parkway Terrace (MDHA),416584
+98,TN,Davidson,Nashville,Hermitage Highlands,416586
+99,TN,Davidson,Nashville,Noel Cove Townhomes,416593
+100,TN,Davidson,Nashville,M.R. Garden Apts,416595
+101,TN,Davidson,Nashville,Farmingham Woods,416602
+102,TN,Davidson,Nashville,Jackson Grove,416604
+103,TN,Davidson,Nashville,Nocturne Forest,416609
+104,TN,Davidson,Nashville,Haynes Park,416611
+105,TN,Davidson,Nashville,Aldrich Heights,416618
+106,TN,Davidson,Nashville,Golden Valley,416620
+107,TN,Davidson,Nashville,William Hill,416627
+108,TN,Davidson,Nashville,Coopertown Farms,416629
+109,TN,Davidson,Nashville,Autumn Chase,416634
+110,TN,Davidson,Nashville,Oakcrest,416636
+111,TN,Davidson,Nashville,Belle Forest,416643
+112,TN,Davidson,Nashville,Stoners Glen,416645
+113,TN,Davidson,Nashville,Brookside Park Townhomes,416652
+114,TN,Davidson,Nashville,Shady Hill,416654
+115,TN,Davidson,Nashville,Hermitage Village Condos,416659
+116,TN,Davidson,Nashville,Kenmore,416661
+117,TN,Davidson,Nashville,Sunset View,416668
+118,TN,Davidson,Nashville,Greenfield,416670
+119,TN,Davidson,Nashville,Tulip Grove Apts,416677
+120,TN,Davidson,Nashville,Family Estates,416679
+121,TN,Davidson,Nashville,Wembley Downs,416709
+122,TN,Davidson,Nashville,Cobblestone Corners,416711
+123,TN,Davidson,Nashville,Maplewood Neights,416718
+124,TN,Davidson,Nashville,Merritt Downs,416720
+125,TN,Davidson,Nashville,Woodside Lake Country Section 2,416727
+126,TN,Davidson,Nashville,Tamble,416729
+127,TN,Davidson,Nashville,Holt Meadows,416734
+128,TN,Davidson,Nashville,Skyview,416736
+129,TN,Davidson,Nashville,Timberwood,416743
+130,TN,Davidson,Nashville,Montogue,416745
+131,TN,Davidson,Nashville,Ravenwood,416752
+132,TN,Davidson,Nashville,Covington Place,416754
+133,TN,Davidson,Nashville,Rainbow Terrace,416759
+134,TN,Davidson,Nashville,Tuckahoe Square,416761
+135,TN,Davidson,Nashville,Blair Heights,416768
+136,TN,Davidson,Nashville,Woodlawn Estates,416770
+137,TN,Davidson,Nashville,Archwood Acres,416777
+138,TN,Davidson,Nashville,Madison Park,416779
+139,TN,Davidson,Nashville,Castle Grove,416784
+140,TN,Davidson,Nashville,Morning View,416786
+141,TN,Davidson,Nashville,Vantage Pointe,416788
+142,TN,Davidson,Nashville,Oakwood,416793
+143,TN,Davidson,Nashville,Nichol Lane,416795
+144,TN,Davidson,Nashville,Grande Villa Estates,416802
+145,TN,Davidson,Nashville,Stanley Heights,416804
+146,TN,Davidson,Nashville,Blair Manor,416809
+147,TN,Davidson,Nashville,Alta Loma,416811
+148,TN,Davidson,Nashville,Rayon City Beautification Association,416813
+149,TN,Davidson,Nashville,Grizzard Manor,416818
+150,TN,Davidson,Nashville,Green Hills Estates,416820
+151,TN,Davidson,Nashville,Templegate,416827
+152,TN,Davidson,Nashville,Village of Foxview,416829
+153,TN,Davidson,Nashville,Green Hills Neighbors,416834
+154,TN,Davidson,Nashville,Parkview,416836
+155,TN,Davidson,Nashville,Hobbs House Condos,416838
+156,TN,Davidson,Nashville,Noel Watkins Grove,416843
+157,TN,Davidson,Nashville,Bordeaux,225359
+158,TN,Davidson,Nashville,Charlotte Park,225760
+159,TN,Davidson,Nashville,Merry Oaks,228214
+160,TN,Davidson,Nashville,Paragon Mills,228852
+161,TN,Davidson,Nashville,Tulip Grove,230221
+162,TN,Davidson,Nashville,Una,230254
+163,TN,Davidson,Nashville,Barclay Drive,272854
+164,TN,Davidson,Nashville,Baxter Road,272872
+165,TN,Davidson,Nashville,Renraw Community,273104
+166,TN,Davidson,Nashville,Cumberland Gardens,273423
+167,TN,Davidson,Nashville,Donelson Hills,273474
+168,TN,Davidson,Nashville,Edmondson - Cloverland,273606
+169,TN,Davidson,Nashville,Enchanted Hills,273640
+170,TN,Davidson,Nashville,Hoggett Ford Road,274040
+171,TN,Davidson,Nashville,Linton South Harpeth,274325
+172,TN,Davidson,Nashville,Melrose,274492
+173,TN,Davidson,Nashville,Osage-North Fisk,274927
+174,TN,Davidson,Nashville,Rosebank,275245
+175,TN,Davidson,Nashville,Shelby Hills,275360
+176,TN,Davidson,Nashville,Shepherd Hills,275362
+177,TN,Davidson,Nashville,Stanford Estates,275561
+178,TN,Davidson,Nashville,Villages of Larchwood,275877
+179,TN,Davidson,Nashville,Timber Ln - Woodleigh,416145
+180,TN,Davidson,Nashville,Woodlawn Area,416146
+181,TN,Davidson,Nashville,Ensworth,416147
+182,TN,Davidson,Nashville,Compton Road,416148
+183,TN,Davidson,Nashville,Hill Place Homeowners,416162
+184,TN,Davidson,Nashville,Brook Glen,416163
+185,TN,Davidson,Nashville,West End Park,416164
+186,TN,Davidson,Nashville,Croley Wood,416165
+187,TN,Davidson,Nashville,Alameda Street Association,416195
+188,TN,Davidson,Nashville,JSH Neighborhood Club,416196
+189,TN,Davidson,Nashville,Community at Bordeaux,416197
+190,TN,Davidson,Nashville,Bedford Forrest,416198
+191,TN,Davidson,Nashville,Stanford Village Homeowners,416212
+192,TN,Davidson,Nashville,Cane Ridge Farms,416213
+193,TN,Davidson,Nashville,Hidden Creek,416214
+194,TN,Davidson,Nashville,Banbury Crossing,416215
+195,TN,Davidson,Nashville,Maxwell Place,416229
+196,TN,Davidson,Nashville,Oak Highlands,416230
+197,TN,Davidson,Nashville,River Park,416231
+198,TN,Davidson,Nashville,Myrtlewood Estates,416232
+199,TN,Davidson,Nashville,Woodridge,416245
+200,TN,Davidson,Nashville,Brentwood Downs,416246
+201,TN,Davidson,Nashville,The Woodlands,416247
+202,TN,Davidson,Nashville,Oak Grove Townhomes,416248
+203,TN,Davidson,Nashville,Brentwood Meadows,416249
+204,TN,Davidson,Nashville,Turtle Creek,416262
+205,TN,Davidson,Nashville,Stonegate,416263
+206,TN,Davidson,Nashville,Brookview Estates,416264
+207,TN,Davidson,Nashville,Ashlawn Place Condos,416265
+208,TN,Davidson,Nashville,Bess Estates,416279
+209,TN,Davidson,Nashville,Valley Green,416280
+210,TN,Davidson,Nashville,Lakewalk Condos,416281
+211,TN,Davidson,Nashville,Autumn Glenn,416282
+212,TN,Davidson,Nashville,Haywood Forest,416296
+213,TN,Davidson,Nashville,Apache Hills,416297
+214,TN,Davidson,Nashville,Fairlane Park,416298
+215,TN,Davidson,Nashville,Tru-Long Acres Condos,416299
+216,TN,Davidson,Nashville,Jamestown Place Condos,416413
+217,TN,Davidson,Nashville,Hazelwood,416414
+218,TN,Davidson,Nashville,Haywood Heights,416415
+219,TN,Davidson,Nashville,Villages of Long Hunter,416416
+220,TN,Davidson,Nashville,Oakwood Terrace,416429
+221,TN,Davidson,Nashville,Leopole Road,416430
+222,TN,Davidson,Nashville,The Coach House,416431
+223,TN,Davidson,Nashville,Davenport Condos,416432
+224,TN,Davidson,Nashville,Haywood Acres,416446
+225,TN,Davidson,Nashville,Elysian Garden Apts,416447
+226,TN,Davidson,Nashville,Country,416448
+227,TN,Davidson,Nashville,Kensington of Priest Lake,416449
+228,TN,Davidson,Nashville,Priest Lake Meadows Homeowners,416463
+229,TN,Davidson,Nashville,Watercrest Townhomes,416464
+230,TN,Davidson,Nashville,Camden Court,416465
+231,TN,Davidson,Nashville,Nashboro Woods,416466
+232,TN,Davidson,Nashville,Woodland Hills,416479
+233,TN,Davidson,Nashville,Priest Lake Forest,416480
+234,TN,Davidson,Nashville,Providence Park,416481
+235,TN,Davidson,Nashville,Forge Ridge,416482
+236,TN,Davidson,Nashville,Melba Acres,416483
+237,TN,Davidson,Nashville,Rosedale,416496
+238,TN,Davidson,Nashville,Woodland Point,416497
+239,TN,Davidson,Nashville,Melrose Heights,416498
+240,TN,Davidson,Nashville,Williamsburg Condos,416499
+241,TN,Davidson,Nashville,Reelfoot,416513
+242,TN,Davidson,Nashville,Quail Valley,416514
+243,TN,Davidson,Nashville,The Meadows,416515
+244,TN,Davidson,Nashville,East Lake,416516
+245,TN,Davidson,Nashville,Newport,416529
+246,TN,Davidson,Nashville,Napier Area,416530
+247,TN,Davidson,Nashville,Meadows at Seven Points,416531
+248,TN,Davidson,Nashville,Windsong,416532
+249,TN,Davidson,Nashville,Perry Heights,416533
+250,TN,Davidson,Nashville,Riverbridge,416546
+251,TN,Davidson,Nashville,Hickory Place Condos,416547
+252,TN,Davidson,Nashville,Lakeshore,416548
+253,TN,Davidson,Nashville,Foxwood,416549
+254,TN,Davidson,Nashville,Charles Place,416563
+255,TN,Davidson,Nashville,Cloverbottom,416564
+256,TN,Davidson,Nashville,Doelsonwood,416565
+257,TN,Davidson,Nashville,Eva Mor Heights,416566
+258,TN,Davidson,Nashville,Cliffdale,416580
+259,TN,Davidson,Nashville,Fleetwood,416581
+260,TN,Davidson,Nashville,Hargis Heights,416582
+261,TN,Davidson,Nashville,Nob Hill,416583
+262,TN,Davidson,Nashville,Polo Park,416596
+263,TN,Davidson,Nashville,New Hope Estates,416597
+264,TN,Davidson,Nashville,Hermitage Woods Apts,416598
+265,TN,Davidson,Nashville,Steeplechase Condos,416599
+266,TN,Davidson,Nashville,Sunny Acres,416600
+267,TN,Davidson,Nashville,Trinity Hills,416613
+268,TN,Davidson,Nashville,Treppard heights,416614
+269,TN,Davidson,Nashville,Highland Trace,416615
+270,TN,Davidson,Nashville,Haynes Manor,416616
+271,TN,Davidson,Nashville,Joseph Avenue Block Club,416630
+272,TN,Davidson,Nashville,Highlands of Harpeth Trace,416631
+273,TN,Davidson,Nashville,Cobblestone Landing,416632
+274,TN,Davidson,Nashville,Ridgemere,416633
+275,TN,Davidson,Nashville,Walden Woods,416646
+276,TN,Davidson,Nashville,Tally Green,416647
+277,TN,Davidson,Nashville,East View,416648
+278,TN,Davidson,Nashville,Blossom Trace,416649
+279,TN,Davidson,Nashville,Heritage Meadows,416650
+280,TN,Davidson,Nashville,Westfield,416663
+281,TN,Davidson,Nashville,Heritage Estates Sec 2,416664
+282,TN,Davidson,Nashville,Cabin Hill,416665
+283,TN,Davidson,Nashville,Kur-It,416666
+284,TN,Davidson,Nashville,Plantation,416680
+285,TN,Davidson,Nashville,Meade Vue,416681
+286,TN,Davidson,Nashville,Conway Court,416682
+287,TN,Davidson,Nashville,Laurel HillBerryville,416713
+288,TN,Davidson,Nashville,Caleb Chase,416714
+289,TN,Davidson,Nashville,Eastdale,416715
+290,TN,Davidson,Nashville,Jackson Park Community Club,416716
+291,TN,Davidson,Nashville,Merrymount Acres,416717
+292,TN,Davidson,Nashville,Lake Country,416730
+293,TN,Davidson,Nashville,Pennington Villas,416731
+294,TN,Davidson,Nashville,Quail Creek Condos,416732
+295,TN,Davidson,Nashville,Walton Oaks,416733
+296,TN,Davidson,Nashville,Village by the Creek Neighborhood Org.,416747
+297,TN,Davidson,Nashville,Idlewild Court,416748
+298,TN,Davidson,Nashville,Waterford,416749
+299,TN,Davidson,Nashville,Neely's Place,416750
+300,TN,Davidson,Nashville,Kingsway Green,416763
+301,TN,Davidson,Nashville,Stonemeade,416764
+302,TN,Davidson,Nashville,Village of Abbeywood,416765
+303,TN,Davidson,Nashville,Lanier Park,416766
+304,TN,Davidson,Nashville,Neighbors of Gibson Drive,416767
+305,TN,Davidson,Nashville,Cedarcrest Estates,416780
+306,TN,Davidson,Nashville,Cedarview Estates,416781
+307,TN,Davidson,Nashville,Bell Knob,416782
+308,TN,Davidson,Nashville,Heritage Square - View,416783
+309,TN,Davidson,Nashville,Eastlawn,416797
+310,TN,Davidson,Nashville,Edgemeade Farms,416798
+311,TN,Davidson,Nashville,Aquarius Apartments,416799
+312,TN,Davidson,Nashville,Cedar Bluff,416800
+313,TN,Davidson,Nashville,North Hill Estates,416814
+314,TN,Davidson,Nashville,Pine Forest,416815
+315,TN,Davidson,Nashville,Mansker Meadows,416816
+316,TN,Davidson,Nashville,Magnolia Station,416817
+317,TN,Davidson,Nashville,Four Seasons Condos,416830
+318,TN,Davidson,Nashville,Warner Park Velley & Highlands,416831
+319,TN,Davidson,Nashville,Georgetown Condos,416832
+320,TN,Davidson,Nashville,Duncanwood Brookmeade,416833
+321,TN,Davidson,Nashville,Huntwick Estates,416847
+322,TN,Davidson,Nashville,Estes Glen Condos,417215
+323,TN,Davidson,Nashville,Battlefield,417216
+324,TN,Davidson,Nashville,Woodmont Lane Homes,417217
+325,TN,Davidson,Nashville,Antioch,48670
+326,TN,Davidson,Nashville,Cloverland Acres,225897
+327,TN,Davidson,Nashville,Crieve Hall,226065
+328,TN,Davidson,Nashville,Eastwood,226381
+329,TN,Davidson,Nashville,Glencliff,226842
+330,TN,Davidson,Nashville,Hermitage Hills,227190
+331,TN,Davidson,Nashville,Hermitage Woods,227192
+332,TN,Davidson,Nashville,Hopewell,227383
+333,TN,Davidson,Nashville,West Meade,230477
+334,TN,Davidson,Nashville,Bellmont Hillsboro,272925
+335,TN,Davidson,Nashville,Brick Church Bellshire,273034
+336,TN,Davidson,Nashville,CCSI (South Inglewood),273166
+337,TN,Davidson,Nashville,Cherokee Park,273225
+338,TN,Davidson,Nashville,College Heights - Clifton,273309
+339,TN,Davidson,Nashville,Four Corners,273770
+340,TN,Davidson,Nashville,Gra-Mar Acres,273859
+341,TN,Davidson,Nashville,Granny White,273870
+342,TN,Davidson,Nashville,Hadley - Washngton,273913
+343,TN,Davidson,Nashville,Harpeth Valley Park,273936
+344,TN,Davidson,Nashville,Jones-Buena Vista,274152
+345,TN,Davidson,Nashville,Lockeland Springs,274338
+346,TN,Davidson,Nashville,McMurray - Huntingdon,274479
+347,TN,Davidson,Nashville,Nashboro Village,274636
+348,TN,Davidson,Nashville,Pennington Bend,274999
+349,TN,Davidson,Nashville,Salemtown,275274
+350,TN,Davidson,Nashville,Stadium Area,275556
+351,TN,Davidson,Nashville,Sylvan Heights,275656
+352,TN,Davidson,Nashville,Your Neighborhood Group,276176
+353,TN,Davidson,Nashville,Buena Vista,276226
+354,TN,Davidson,Nashville,Historic Edgefield,276378
+355,TN,Davidson,Nashville,McFerrin Park,276444
+356,TN,Davidson,Nashville,Medial Avenue,416142
+357,TN,Davidson,Nashville,Hillsboro Station,416144
+358,TN,Davidson,Nashville,Bowling Woodlawn,416149
+359,TN,Davidson,Nashville,Woodlawn West,416151
+360,TN,Davidson,Nashville,Acklen Avenue Alliance,416158
+361,TN,Davidson,Nashville,Creekside,416160
+362,TN,Davidson,Nashville,Village West Apartments,416194
+363,TN,Davidson,Nashville,Apple Valley,416199
+364,TN,Davidson,Nashville,Autumn Oaks,416201
+365,TN,Davidson,Nashville,Stone Creek Park,416203
+366,TN,Davidson,Nashville,Mill Run,416208
+367,TN,Davidson,Nashville,Holt Woods,416210
+368,TN,Davidson,Nashville,Lennox Village,416217
+369,TN,Davidson,Nashville,Oakmont,416219
+370,TN,Davidson,Nashville,Barnes Crossing,416224
+371,TN,Davidson,Nashville,Park Place Condos,416226
+372,TN,Davidson,Nashville,Cloverland Park,416228
+373,TN,Davidson,Nashville,Townhomes of Shadow Glen,416233
+374,TN,Davidson,Nashville,Honey Brook,416235
+375,TN,Davidson,Nashville,Provincetown,416242
+376,TN,Davidson,Nashville,Hearthstone Manor,416244
+377,TN,Davidson,Nashville,Timber Trace Townhomes,416251
+378,TN,Davidson,Nashville,Devon Park,416253
+379,TN,Davidson,Nashville,Hearthstone,416258
+380,TN,Davidson,Nashville,Villas at Belle Parke,416260
+381,TN,Davidson,Nashville,Hickory Valley Condos,416267
+382,TN,Davidson,Nashville,Brentwood Glen,416269
+383,TN,Davidson,Nashville,Lakewood Village Homeowners,416276
+384,TN,Davidson,Nashville,Whittmore Valley,416278
+385,TN,Davidson,Nashville,Hickory Hollow Townhomes,416283
+386,TN,Davidson,Nashville,South Shore,416285
+387,TN,Davidson,Nashville,McMurray Court,416292
+388,TN,Davidson,Nashville,Colemont,416294
+389,TN,Davidson,Nashville,Rice Hill,416401
+390,TN,Davidson,Nashville,Devon Highlands,416403
+391,TN,Davidson,Nashville,Whispering Hills,416408
+392,TN,Davidson,Nashville,Cambridge Forest,416410
+393,TN,Davidson,Nashville,Belle Pointe,416412
+394,TN,Davidson,Nashville,Cherry Hills,416417
+395,TN,Davidson,Nashville,Somerset,416419
+396,TN,Davidson,Nashville,Woodlea Place,416426
+397,TN,Davidson,Nashville,Terragon Trails,416428
+398,TN,Davidson,Nashville,Woodymore Heights,416433
+399,TN,Davidson,Nashville,Bakertown Gardens,416435
+400,TN,Davidson,Nashville,Quiet Creek,416437
+401,TN,Davidson,Nashville,Caldwell Court Condos,416442
+402,TN,Davidson,Nashville,Devon Valley,416444
+403,TN,Davidson,Nashville,Herbert Heights,416451
+404,TN,Davidson,Nashville,Chelsea of Priest Lake,416453
+405,TN,Davidson,Nashville,Coventry Square Apts,416458
+406,TN,Davidson,Nashville,Peninsula Pointe,416460
+407,TN,Davidson,Nashville,Pagoda Condos,416462
+408,TN,Davidson,Nashville,Wynbrook,416467
+409,TN,Davidson,Nashville,Ransom Village,416469
+410,TN,Davidson,Nashville,Paragon Place,416476
+411,TN,Davidson,Nashville,Willow Pointe,416478
+412,TN,Davidson,Nashville,Heritage Village,416485
+413,TN,Davidson,Nashville,Currywood Acres,416487
+414,TN,Davidson,Nashville,Carlyle Palce - Battlewood,416492
+415,TN,Davidson,Nashville,Doral Country Villa,416494
+416,TN,Davidson,Nashville,Glencliff Estates,416501
+417,TN,Davidson,Nashville,Corinne Place,416503
+418,TN,Davidson,Nashville,Five Oaks Condos,416510
+419,TN,Davidson,Nashville,Timber Lake Condos,416512
+420,TN,Davidson,Nashville,Belair,416517
+421,TN,Davidson,Nashville,Lincoya Bay,416519
+422,TN,Davidson,Nashville,Belle Glen,416526
+423,TN,Davidson,Nashville,The Peninsula,416528
+424,TN,Davidson,Nashville,Newsome Green,416535
+425,TN,Davidson,Nashville,Twin Lawn,416537
+426,TN,Davidson,Nashville,Hagars Grove,416542
+427,TN,Davidson,Nashville,Hickory Bend,416544
+428,TN,Davidson,Nashville,Lake Chateau Condos,416551
+429,TN,Davidson,Nashville,Woodberry Park,416553
+430,TN,Davidson,Nashville,Bridgewater,416560
+431,TN,Davidson,Nashville,East Haven Townhomes,416562
+432,TN,Davidson,Nashville,Somerset Farms,416567
+433,TN,Davidson,Nashville,New Edition Community,416569
+434,TN,Davidson,Nashville,Ashley Green,416576
+435,TN,Davidson,Nashville,Woodhaven Condos,416578
+436,TN,Davidson,Nashville,Coronado,416585
+437,TN,Davidson,Nashville,Burning Tree Apts,416587
+438,TN,Davidson,Nashville,Windsor Terrace,416592
+439,TN,Davidson,Nashville,Maplecrest,416594
+440,TN,Davidson,Nashville,Deer Lake,416601
+441,TN,Davidson,Nashville,East Nashville Block Club,416603
+442,TN,Davidson,Nashville,Chateau Valley,416610
+443,TN,Davidson,Nashville,Still Spring Hollow,416612
+444,TN,Davidson,Nashville,Vista Lane,416617
+445,TN,Davidson,Nashville,Brookview,416619
+446,TN,Davidson,Nashville,Joelton Heights,416626
+447,TN,Davidson,Nashville,Ridgeview Estates,416628
+448,TN,Davidson,Nashville,Dodson Heights,416635
+449,TN,Davidson,Nashville,Saddlebrook,416637
+450,TN,Davidson,Nashville,Chase Creek,416642
+451,TN,Davidson,Nashville,Two Rivers,416644
+452,TN,Davidson,Nashville,Brookside Woods,416651
+453,TN,Davidson,Nashville,Harpeth Park,416653
+454,TN,Davidson,Nashville,McKendree Village,416660
+455,TN,Davidson,Nashville,Ashley Place,416662
+456,TN,Davidson,Nashville,Maynor Place,416667
+457,TN,Davidson,Nashville,Hidden Hills,416669
+458,TN,Davidson,Nashville,Tulip Grove Woods,416671
+459,TN,Davidson,Nashville,Oak Creek,416676
+460,TN,Davidson,Nashville,Shephardwood,416678
+461,TN,Davidson,Nashville,Sorthfork,416710
+463,TN,Davidson,Nashville,Glendale Park,226852
+464,TN,Davidson,Nashville,Marrowbone,228105
+465,TN,Davidson,Nashville,Woodbine,230664
+466,TN,Davidson,Nashville,Bellshire Estates,272928
+467,TN,Davidson,Nashville,Cleveland Park,273281
+468,TN,Davidson,Nashville,Dalemere Area,273430
+469,TN,Davidson,Nashville,East End,273547
+470,TN,Davidson,Nashville,Edgehill Community Garden,273596
+471,TN,Davidson,Nashville,Fisk - Meharry,273732
+472,TN,Davidson,Nashville,Haynes Area,273950
+473,TN,Davidson,Nashville,Heron Walk,273965
+474,TN,Davidson,Nashville,Neelys Bend,274651
+475,TN,Davidson,Nashville,Rachel Jackson Garden Club,275120
+476,TN,Davidson,Nashville,Riverside,275436
+477,TN,Davidson,Nashville,South Harpeth Area,275438
+478,TN,Davidson,Nashville,Southside,275487
+479,TN,Davidson,Nashville,White Bridge,276056
+480,TN,Davidson,Nashville,Brandywine Farms,276221
+481,TN,Davidson,Nashville,Greenwood,276356
+482,TN,Davidson,Nashville,Hickory Woods,276373
+483,TN,Davidson,Nashville,Southeast,276572
+484,TN,Davidson,Nashville,Cedar Crest,416137
+485,TN,Davidson,Nashville,Sugartree,416138
+486,TN,Davidson,Nashville,Lombardy,416139
+487,TN,Davidson,Nashville,Westchase Condos,416140
+488,TN,Davidson,Nashville,Lions Head,416153
+489,TN,Davidson,Nashville,Elmington Condos,416154
+490,TN,Davidson,Nashville,Colonies,416155
+491,TN,Davidson,Nashville,Grove at Whitworth Condos,416156
+492,TN,Davidson,Nashville,Historic Waverly Place,416157
+493,TN,Davidson,Nashville,October Woods,416204
+494,TN,Davidson,Nashville,Indian Creek Estates,416205
+495,TN,Davidson,Nashville,Brookview Forest,416206
+496,TN,Davidson,Nashville,Highland Creek,416207
+497,TN,Davidson,Nashville,Forest Acres Estates,416220
+498,TN,Davidson,Nashville,Mountainview Homesowners,416221
+499,TN,Davidson,Nashville,Amber Hills,416222
+500,TN,Davidson,Nashville,Bridle Downs,416223
+501,TN,Davidson,Nashville,Valley View - Cloverland,416237
+502,TN,Davidson,Nashville,Terraces at Brentwood,416238
+503,TN,Davidson,Nashville,Brentwood Chase,416239
+504,TN,Davidson,Nashville,Greenwood Homeowners,416240
+505,TN,Davidson,Nashville,Baby Ruth Lane Estates,416254
+506,TN,Davidson,Nashville,Hemmington,416255
+507,TN,Davidson,Nashville,Heatherwood,416256
+508,TN,Davidson,Nashville,Bell Forge Village,416257
+509,TN,Davidson,Nashville,Lexington (Fox Run),416712
+510,TN,Davidson,Nashville,Kenmont Apts,416719
+511,TN,Davidson,Nashville,Hillhurst Homeowners,416721
+512,TN,Davidson,Nashville,Summerfield Village,416270
+513,TN,Davidson,Nashville,Hickory View,416271
+514,TN,Davidson,Nashville,Boon Trace,416726
+515,TN,Davidson,Nashville,Northern Inglewood,416728
+516,TN,Davidson,Nashville,Abbington Park Condos,416735
+517,TN,Davidson,Nashville,Ellington Place Condos,416737
+518,TN,Davidson,Nashville,Chesapeake,416744
+519,TN,Davidson,Nashville,Brentview Meadows,416272
+520,TN,Davidson,Nashville,Devon Close,416273
+521,TN,Davidson,Nashville,Brittany Park,416274
+522,TN,Davidson,Nashville,Hamilton Chase,416287
+523,TN,Davidson,Nashville,Candlewood,416746
+524,TN,Davidson,Nashville,Willow Creek,416751
+525,TN,Davidson,Nashville,Huntington Village,416753
+526,TN,Davidson,Nashville,Fair Oaks,416288
+527,TN,Davidson,Nashville,Antioch Park,416289
+528,TN,Davidson,Nashville,Fields of Brick Church,416760
+529,TN,Davidson,Nashville,Arrowhead Estates,416762
+530,TN,Davidson,Nashville,Madison Park Condos,416769
+531,TN,Davidson,Nashville,Southwood,416290
+532,TN,Davidson,Nashville,Lakeside Cove at Percy Priest,416404
+533,TN,Davidson,Nashville,Hunters Run,416405
+534,TN,Davidson,Nashville,Belle Oaks,416406
+535,TN,Davidson,Nashville,Williams Valley,416771
+536,TN,Davidson,Nashville,Belll Valley,416776
+537,TN,Davidson,Nashville,Haven Acres,416778
+538,TN,Davidson,Nashville,Stacy Square,416785
+539,TN,Davidson,Nashville,Amqui Station,416787
+540,TN,Davidson,Nashville,Farview,416794
+541,TN,Davidson,Nashville,Ozark Hills,416796
+542,TN,Davidson,Nashville,Crestbrook Meadows,416801
+543,TN,Davidson,Nashville,Primrose Meadows,416803
+544,TN,Davidson,Nashville,Willow Village,416810
+545,TN,Davidson,Nashville,Plantation Estates,416812
+546,TN,Davidson,Nashville,Greenview Estates,416819
+547,TN,Davidson,Nashville,Fox Chase Meadows,416821
+548,TN,Davidson,Nashville,Lone Oak Heights,416826
+549,TN,Davidson,Nashville,Village of Summerwind,416828
+550,TN,Davidson,Nashville,Magnolia Hills,416835
+551,TN,Davidson,Nashville,Williamsport,416837
+552,TN,Davidson,Nashville,Gloucester Square,416844
+553,TN,Davidson,Nashville,East Hill,416846
+554,TN,Davidson,Nashville,Green Hills Neighborhood Association,417212
+555,TN,Davidson,Nashville,Blanchard Heights,416407
+556,TN,Davidson,Nashville,Forest View Park,416421
+557,TN,Davidson,Nashville,Forest Cove Homeowners,416422
+558,TN,Davidson,Nashville,Valley West,416423
+559,TN,Davidson,Nashville,Murray Heights,416424
+560,TN,Davidson,Nashville,Harding Place Condos,416438
+561,TN,Davidson,Nashville,Justin Towne,416439
+562,TN,Davidson,Nashville,Humber Drive,416440
+563,TN,Davidson,Nashville,Southern Hills Condos,416441
+564,TN,Davidson,Nashville,Piccadilly Square,416454
+565,TN,Davidson,Nashville,Old Harpeth Estates,416455
+566,TN,Davidson,Nashville,Moss Creek,416456
+567,TN,Davidson,Nashville,Luna Heights,416457
+568,TN,Davidson,Nashville,Kenilworth Estates,416471
+569,TN,Davidson,Nashville,Chatham Pointe,416472
+570,TN,Davidson,Nashville,Highview Acres,416473
+571,TN,Davidson,Nashville,Foxcroft Apartments,416474
+572,TN,Davidson,Nashville,Seven Oaks Estates,416488
+573,TN,Davidson,Nashville,Harbour Town Condos,416489
+574,TN,Davidson,Nashville,Airport Estates,416490
+575,TN,Davidson,Nashville,East Glencliff,416491
+576,TN,Davidson,Nashville,Percy Priest Woods,416504
+577,TN,Davidson,Nashville,Creekside Meadows,416505
+578,TN,Davidson,Nashville,Miro Meadows,416506
+579,TN,Davidson,Nashville,Bransford Avenue,416507
+580,TN,Davidson,Nashville,Castlewood Condos,416508
+581,TN,Davidson,Nashville,Larkwood,416521
+582,TN,Davidson,Nashville,Patio Villa,416522
+583,TN,Davidson,Nashville,The Trails,416523
+584,TN,Davidson,Nashville,Malvin Heights,416524
+585,TN,Davidson,Nashville,Lakeland,416538
+586,TN,Davidson,Nashville,Meadowview Acres,416539
+587,TN,Davidson,Nashville,Emery Place Condos,416540
+588,TN,Davidson,Nashville,Gayland,416541
+589,TN,Davidson,Nashville,Belle Acres,416555
+590,TN,Davidson,Nashville,Stewarts Ferry Apts,416556
+591,TN,Davidson,Nashville,Natchez Trace Estates,416557
+592,TN,Davidson,Nashville,Poplar Ridge,416558
+593,TN,Davidson,Nashville,Cayce Homes (MDHA),416571
+594,TN,Davidson,Nashville,Alta Lake Apts,416572
+595,TN,Davidson,Nashville,Edgefield Manor,416573
+596,TN,Davidson,Nashville,CWA Apartments,416574
+597,TN,Davidson,Nashville,Hermitage Meadows,416588
+598,TN,Davidson,Nashville,Lakeside Woods Estates,416589
+599,TN,Davidson,Nashville,Rockwood Estates,416590
+600,TN,Davidson,Nashville,Valley Grove,416591
+601,TN,Davidson,Nashville,Harpeth Trace Estates,416605
+602,TN,Davidson,Nashville,Chesney Glen,416606
+603,TN,Davidson,Nashville,Grand Staff Apts,416607
+604,TN,Davidson,Nashville,River Drive,416608
+605,TN,Davidson,Nashville,Willow Trace Homeowners,416621
+606,TN,Davidson,Nashville,Summit Oaks,416622
+607,TN,Davidson,Nashville,Neighborhood Trash Patrol,416623
+608,TN,Davidson,Nashville,Cobblestone Creek,416624
+609,TN,Davidson,Nashville,Jacobs Valley,416625
+610,TN,Davidson,Nashville,Cumberland Trace,416638
+611,TN,Davidson,Nashville,Bellewood Park Apts,416639
+612,TN,Davidson,Nashville,Dugger Heights,416640
+613,TN,Davidson,Nashville,Porter Heights,416641
+614,TN,Davidson,Nashville,Burchwood Gardens,416655
+615,TN,Davidson,Nashville,Greer Meadows,416656
+616,TN,Davidson,Nashville,Heritage Estates,416657
+617,TN,Davidson,Nashville,Edgewod Residents Association,416658
+618,TN,Davidson,Nashville,Brookcastle,416672
+619,TN,Davidson,Nashville,Saddleridge,416673
+620,TN,Davidson,Nashville,Holiday Mobile Village,416674
+621,TN,Davidson,Nashville,Sunset Park,416675
+622,TN,Davidson,Nashville,Pennington Bend Estates,416722
+623,TN,Davidson,Nashville,Cleveland Hall,416723
+624,TN,Davidson,Nashville,Oak Valley,416724
+625,TN,Davidson,Nashville,Inglewood Court United,416725
+626,TN,Davidson,Nashville,River Glen Homeowners,416738
+627,TN,Davidson,Nashville,Oakwood Estates,416739
+628,TN,Davidson,Nashville,Rainwood Homeowners,416740
+629,TN,Davidson,Nashville,Golf Club Place,416741
+630,TN,Davidson,Nashville,Eagle Ridge,416742
+631,TN,Davidson,Nashville,Fairway View,416755
+632,TN,Davidson,Nashville,Historic Old Hickory Village,416756
+633,TN,Davidson,Nashville,Stratton Heights,416757
+634,TN,Davidson,Nashville,Pleasant Acres,416758
+635,TN,Davidson,Nashville,Overlook Estates,416772
+636,TN,Davidson,Nashville,Rio Vista Apartments,416773
+637,TN,Davidson,Nashville,Hillsborough,416774
+638,TN,Davidson,Nashville,Skyline Village,416775
+639,TN,Davidson,Nashville,Bonnie Brae Suddivision,416789
+640,TN,Davidson,Nashville,Creek Trail,416790
+641,TN,Davidson,Nashville,Shannon Place,416791
+642,TN,Davidson,Nashville,Breckenridge Valley,416792
+643,TN,Davidson,Nashville,Village of Cherry Glen,416805
+644,TN,Davidson,Nashville,Edenwold City,416806
+645,TN,Davidson,Nashville,Primrose Acres,416807
+646,TN,Davidson,Nashville,Ridgemont Estates,416808
+647,TN,Davidson,Nashville,Brownstone,416822
+648,TN,Davidson,Nashville,Village of Ashlawn,416823
+649,TN,Davidson,Nashville,Riverwalk,416824
+650,TN,Davidson,Nashville,Village of Boxmere,416825
+651,TN,Davidson,Nashville,Cedar Forest,416839
+652,TN,Davidson,Nashville,Rolling Meadows,416840
+653,TN,Davidson,Nashville,Belle Meade Links,416841
+654,TN,Davidson,Nashville,Westchase - Charlotte,416842
+655,TN,Davidson,Nashville,Lipscomb Heights,417207
+656,TN,Davidson,Nashville,Sugar Tree,417208
+657,TN,Davidson,Nashville,Abbot Martin Estates,417209
+658,TN,Davidson,Nashville,Abbotsford,417210
+659,TN,Davidson,Nashville,Oakhaven,416845
+660,TN,Davidson,Nashville,Bellevue Highlands,417211
+661,TN,Davidson,Nashville,Longwood,417213
+677,TN,Davidson,Nashville,Burlington,417214
