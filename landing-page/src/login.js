@@ -31,7 +31,8 @@ function toggleSignIn() {
             if (errorCode === 'auth/wrong-password') {
             alert('Wrong password.');
             } else {
-                alert(errorMessage);
+       
+       alert(errorMessage);
             }
             console.log(error);
             document.getElementById('quickstart-sign-in').disabled = false;
@@ -48,12 +49,13 @@ function toggleSignIn() {
 function handleSignUp() {
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
-    if (email.length < 4) {
-    alert('Please enter an email address.');
-    return;
+    if (validateEmail(email)) {
+        document.getElementById('email_error').textContent = 'Please enter a valid email address.';
+        return;
     }
-    if (password.length < 4) {
-    alert('Please enter a password.');
+    if (validatePassword(password)){
+        document.getElementById('password_error').textContent = "Password must be between greater than 8 character " +
+            "and contain a lower-case, an upper-case, a number and a symbol (!, @, #, $, % or ^)";
     return;
     }
     // Sign in with email and pass.
@@ -159,6 +161,16 @@ function initApp() {
     document.getElementById('quickstart-sign-up').addEventListener('click', handleSignUp, false);
     document.getElementById('quickstart-verify-email').addEventListener('click', sendEmailVerification, false);
     document.getElementById('quickstart-password-reset').addEventListener('click', sendPasswordReset, false);
+}
+
+function validatePassword(password) {
+    let regex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
+    return regex.test(password);
+}
+
+function validateEmail(email) {
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
 }
 
 window.onload = function () {
