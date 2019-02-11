@@ -1,0 +1,9 @@
+Our website is started up by typing in npm install into the command line, but that hadn’t been working for me. 
+The command prompt on my computer would just return errors saying it couldn’t find a package.json file. 
+As I looked for answers of how to make it run on my machine I needed to know what is npm? 
+The world’s largest software library. It’s open source and is installed with node.js NPM stands for node package manager, 
+all npm packages are defined in files called package.json. JSON (JavaScript Object Notation) can be used to make objects. 
+Npm can also manage dependencies and install all the dependencies of a project (dependencies are also defined in package.json.
+	I also did a firebase tutorial to help me get to know how to use the database functionality. 
+
+I had more that I put on here, but it didn't commit because I didn't save the file eek! Living and learning
