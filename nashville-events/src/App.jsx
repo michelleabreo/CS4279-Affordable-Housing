@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import Map from './common-components/Map';
-
+import Main from './main';
 
 class App extends Component {
   render() {
-    return(
-    <div>
-      <Map/>
-    </div>
-    );
+    return <Main />;
   }
 }
 
