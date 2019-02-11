@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import EventList from './components/Events';
 import BudgetPage from './components/BudgetPage';
+import Map from './components/Map.js';
 
 export default function Main() {
   return (
@@ -47,6 +48,11 @@ export default function Main() {
                     Budget
                   </Link>
                 </li>
+                <li>
+                  <Link to="/map" className="nav-link">
+                    Map
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -55,6 +61,7 @@ export default function Main() {
           <Route exact path="/" component={Home} />
           <Route path="/events" component={EventList} />
           <Route path="/budget" component={BudgetPage} />
+          <Route path="/map" component={Map} />
         </Switch>
         <Footer />
       </div>
