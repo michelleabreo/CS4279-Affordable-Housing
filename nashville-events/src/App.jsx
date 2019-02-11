@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import NashNav from './common-components/NashNav';
+import Main from './main';
 
 class App extends Component {
   render() {
-    return <NashNav />;
+    return <Main />;
   }
 }
 
