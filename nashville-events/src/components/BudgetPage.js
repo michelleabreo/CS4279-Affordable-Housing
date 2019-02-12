@@ -36,6 +36,8 @@ class BudgetSheet extends React.Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.changePercentage = this.changePercentage.bind(this);
+    this.handleFormSubmit = this.handleFormSubmit.bind(this);
+    this.input = React.createRef();
   }
 
   handleChange(event) {
@@ -44,6 +46,51 @@ class BudgetSheet extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault();
+  }
+
+  handleFormSubmit(event) {
+    console.log('handleFormSubmit called')
+    console.log(this.input.current.value);
+    const tmpPercents = this.state.percentages;
+    switch (event.target.name) {
+      case 'housing':
+        console.log('housing percentage changed by form');
+        tmpPercents.housing = (event.target.value);
+        break;
+      case 'insurance':
+        console.log('insurance percentage changed by form');
+        tmpPercents.insurance = event.target.value;
+        break;
+      case 'food':
+        console.log('food percentage changed by form');
+        tmpPercents.food = event.target.value;
+        break;
+      case 'transportation':
+        console.log('transportation percentage changed by form');
+        tmpPercents.transportation = event.target.value;
+        break;
+      case 'utilities':
+        console.log('utilities percentage changed by form');
+        tmpPercents.utilities = event.target.value;
+        break;
+      case 'savings':
+        console.log('savings percentage changed by form');
+        tmpPercents.savings = event.target.value;
+        break;
+      case 'fun':
+        console.log('fun percentage changed by form');
+        tmpPercents.fun = event.target.value;
+        break;
+      case 'clothing':
+        console.log('clothing percentage changed by form');
+        tmpPercents.clothing = event.target.value;
+        break;
+      case 'personal':
+        console.log('personal percentage changed by form');
+        tmpPercents.personal = event.target.value;
+        break;
+    }
+    this.setState({ percentages: tmpPercents });
   }
 
   changePercentage(subtract, field) {
@@ -115,10 +162,20 @@ class BudgetSheet extends React.Component {
 
     const ButtonSet = (parameters) => {
       const name = parameters.name;
+      const num = parameters.num;
       return (
         <div>
           <button onClick={this.changePercentage.bind(this, 1, name)}>-</button>
           <button onClick={this.changePercentage.bind(this, 0, name)}>+</button>
+          <form onSubmit={this.handleFormSubmit.bind(this)}>
+            <input type={"number"}
+                   step={.001}
+                   defaultValue={percentageArray[num]}
+                   name={name}
+                   ref={this.input}
+            />
+            <input type={"submit"} value={"Submit"} />
+          </form>
         </div>
       );
     };
@@ -135,16 +192,16 @@ class BudgetSheet extends React.Component {
           <li>
             <div>
               <BudgetAllocation name="Housing" percent={percentages.housing} total={salary} />
-              <ButtonSet name="housing" />
+              <ButtonSet name="housing" num={0} />
             </div>
           </li>
           <li>
             <BudgetAllocation name="Insurance" percent={percentages.insurance} total={salary} />
-            <ButtonSet name="insurance" />
+            <ButtonSet name="insurance" num={1}/>
           </li>
           <li>
             <BudgetAllocation name="Food" percent={percentages.food} total={salary} />
-            <ButtonSet name="food" />
+            <ButtonSet name="food" num={2} />
           </li>
           <li>
             <BudgetAllocation
@@ -152,27 +209,27 @@ class BudgetSheet extends React.Component {
               percent={percentages.transportation}
               total={salary}
             />
-            <ButtonSet name="transportation" />
+            <ButtonSet name="transportation" num={3} />
           </li>
           <li>
             <BudgetAllocation name="Utilities" percent={percentages.utilities} total={salary} />
-            <ButtonSet name="utilities" />
+            <ButtonSet name="utilities" num={4}/>
           </li>
           <li>
             <BudgetAllocation name="Savings" percent={percentages.savings} total={salary} />
-            <ButtonSet name="savings" />
+            <ButtonSet name="savings" num={5}/>
           </li>
           <li>
             <BudgetAllocation name="Fun" percent={percentages.fun} total={salary} />
-            <ButtonSet name="fun" />
+            <ButtonSet name="fun" num={6}/>
           </li>
           <li>
             <BudgetAllocation name="Clothing" percent={percentages.clothing} total={salary} />
-            <ButtonSet name="clothing" />
+            <ButtonSet name="clothing" num={7}/>
           </li>
           <li>
             <BudgetAllocation name="Personal" percent={percentages.personal} total={salary} />
-            <ButtonSet name="personal" />
+            <ButtonSet name="personal" num={8}/>
           </li>
         </ul>
         <h2>
@@ -196,14 +253,14 @@ class BudgetAllocation extends React.Component {
     const expenditure = this.props.percent * this.props.total;
     return (
       <div>
-        <h3>
+        <h5>
           {budgetSection}
           {' '}
 (
           {(this.props.percent * 100).toFixed(1)}
           %): $
           {numberWithCommas(expenditure.toFixed(2))}
-        </h3>
+        </h5>
       </div>
     );
   }
