@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css?family=Aleo:700|Montserrat:500");
+
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #fffffa !important;
+}
+
+.main-content {
+  margin-top: 1%;
+  background-color: #fffffa;
+}
+.main-content h1 {
+  text-align: left;
+  font-family: "Montserrat";
+  font-size: 25px;
+  color: #ef8354;
+}
