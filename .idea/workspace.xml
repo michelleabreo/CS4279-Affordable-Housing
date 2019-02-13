@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fee32aa-fc51-4e33-8d0f-03f37b0a0a02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/budget-page/src/BudgetPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/budget-page/src/BudgetPage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -15,44 +17,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget-page/public/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/budget-page/src/BudgetPage.js">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="175" column="19" lean-forward="true" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
+            <state relative-caret-position="910">
+              <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
               <folding>
-                <element signature="n#!!block;n#numberWithCommas#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/housing-app/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/budget-page/src/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -64,6 +35,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -90,6 +62,13 @@
         <option value="$PROJECT_DIR$/budget-page/src/App.js" />
         <option value="$PROJECT_DIR$/budget-page/src/App.test.js" />
         <option value="$PROJECT_DIR$/budget-page/src/BudgetPage.js" />
+        <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPage.css" />
+        <option value="$PROJECT_DIR$/nashville-events/src/styling/events.css" />
+        <option value="$PROJECT_DIR$/nashville-events/src/index.css" />
+        <option value="$PROJECT_DIR$/nashville-events/src/index.js" />
+        <option value="$PROJECT_DIR$/nashville-events/src/styling/main.css" />
+        <option value="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" />
+        <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js" />
       </list>
     </option>
   </component>
@@ -105,6 +84,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,24 +95,51 @@
             <path>
               <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
-              <item name="budget-page" type="462c0819:PsiDirectoryNode" />
+              <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
-              <item name="housing-app" type="462c0819:PsiDirectoryNode" />
+              <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
+              <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
+              <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="events-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
+              <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="styling" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nashville-events/src/styling" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -161,6 +168,8 @@
       <workItem from="1548871189552" duration="1199000" />
       <workItem from="1549307490167" duration="23000" />
       <workItem from="1549307542129" duration="7560000" />
+      <workItem from="1549992411122" duration="3705000" />
+      <workItem from="1550032676224" duration="1921000" />
     </task>
     <task id="LOCAL-00001" summary="First draft budget page">
       <created>1548281770212</created>
@@ -183,11 +192,25 @@
       <option name="project" value="LOCAL" />
       <updated>1549316781579</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added input field to change the percentage of each budget allocation">
+      <created>1549937375607</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1549937375607</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Fixed input field to change the percentage of each budget allocation">
+      <created>1550013190403</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1550013190403</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23077000" />
+    <option name="totallyTimeSpent" value="32455000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -219,7 +242,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First draft budget page" />
     <MESSAGE value="Changed name from App.js to BudgetPage.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Changed name from App.js to BudgetPage.js" />
+    <MESSAGE value="Added input field to change the percentage of each budget allocation" />
+    <MESSAGE value="Fixed input field to change the percentage of each budget allocation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed input field to change the percentage of each budget allocation" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/budget.js" />
@@ -234,64 +259,14 @@
     <entry file="file://$PROJECT_DIR$/budget/src/App.css" />
     <entry file="file://$PROJECT_DIR$/budget/src/index.css" />
     <entry file="file://$PROJECT_DIR$/budget/src/App.js" />
-    <entry file="file://$PROJECT_DIR$/budget-page/public/favicon.ico">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/housing-app/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/src/App.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/housing-app/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/budget-page/public/favicon.ico" />
+    <entry file="file://$PROJECT_DIR$/budget-page/README.md" />
+    <entry file="file://$PROJECT_DIR$/housing-app/src/App.js" />
+    <entry file="file://$PROJECT_DIR$/budget-page/src/index.js" />
+    <entry file="file://$PROJECT_DIR$/budget-page/src/App.css" />
+    <entry file="file://$PROJECT_DIR$/budget-page/src/App.test.js" />
+    <entry file="file://$PROJECT_DIR$/housing-app/README.md" />
+    <entry file="file://$PROJECT_DIR$/budget-page/public/index.html" />
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -299,12 +274,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/budget-page/src/BudgetPage.js">
+    <entry file="file://$PROJECT_DIR$/budget-page/src/BudgetPage.js" />
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="175" column="19" lean-forward="true" selection-start-line="175" selection-start-column="19" selection-end-line="175" selection-end-column="19" />
+        <state>
           <folding>
-            <element signature="n#!!block;n#numberWithCommas#0" />
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/events-page/EventCard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/events-page/EventList.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/components/Events.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/main.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="26" lean-forward="true" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/events.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="1" lean-forward="true" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="910">
+          <caret line="112" column="22" lean-forward="true" selection-start-line="112" selection-start-column="22" selection-end-line="112" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

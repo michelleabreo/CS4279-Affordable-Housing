@@ -52,22 +52,25 @@ class BudgetSheet extends React.Component {
     handleFormSubmit(event) {
         event.preventDefault();
         console.log('handleFormSubmit called')
-        console.log(event.target.name);
         const tmpPercents = this.state.percentages;
-        tmpPercents.housing = this.housingPercent.value;
-        tmpPercents.insurance = this.insurancePercent.value;
-        tmpPercents.food = this.foodPercent.value;
-        tmpPercents.transportation = this.transportationPercent.value;
-        tmpPercents.utilities = this.utilitiesPercent.value;
-        tmpPercents.savings = this.savingsPercent.value;
-        tmpPercents.fun = this.funPercent.value;
-        tmpPercents.clothing = this.clothingPercent.value;
-        tmpPercents.personal = this.personalPercent.value;
+
+        tmpPercents.housing = parseFloat(this.housingPercent.value);
+        tmpPercents.insurance = parseFloat(this.insurancePercent.value);
+        tmpPercents.food = parseFloat(this.foodPercent.value);
+        tmpPercents.transportation = parseFloat(this.transportationPercent.value);
+        tmpPercents.utilities = parseFloat(this.utilitiesPercent.value);
+        tmpPercents.savings = parseFloat(this.savingsPercent.value);
+        tmpPercents.fun = parseFloat(this.funPercent.value);
+        tmpPercents.clothing = parseFloat(this.clothingPercent.value);
+        tmpPercents.personal = parseFloat(this.personalPercent.value);
 
         this.setState({percentages: tmpPercents});
     }
 
-    changePercentage(subtract, field) {
+    changePercentage(subtract, field, event) {
+        if(event.detail===0) {
+            return;
+        }
         console.log('changePercentage called');
         const multiplier = subtract === 0 ? 1 : -1;
         const change = 0.005 * multiplier;
