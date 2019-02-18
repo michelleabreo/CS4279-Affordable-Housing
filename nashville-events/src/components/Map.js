@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import L from 'leaflet';
+import './mapStyle.css'
 import { Map as LeafletMap, GeoJSON, TileLayer, Marker, Popup } from 'react-leaflet';
 
 import geojson from "./attempt.json";
@@ -40,7 +41,6 @@ class Map extends Component {
     this._mapNode = null;
   }
 
-  
   init(id) {
     if (this.state.map) return;
     // this function creates the Leaflet map object and is called after the Map component mounts
