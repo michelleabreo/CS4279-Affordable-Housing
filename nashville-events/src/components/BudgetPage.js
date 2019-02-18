@@ -149,6 +149,7 @@ class BudgetSheet extends React.Component {
 
         return (
             <form onSubmit={this.handleFormSubmit} className={"allocationList"}>
+                <table>
                     <div classname="firstElt">
                         Monthly salary? (in thousands)
                     </div>
@@ -302,8 +303,8 @@ class BudgetSheet extends React.Component {
                         <td>
                             <input type={"submit"} value={"Submit"}/>
                         </td>
-
                     </tr>
+                </table>
             </form>
         );
     }
