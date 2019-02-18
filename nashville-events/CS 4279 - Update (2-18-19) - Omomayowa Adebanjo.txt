@@ -1,0 +1,9 @@
+﻿CS 4279: 
+Learned basics of Leaflet.js - Omomayowa Adebanjo
+So far, I have been preoccupied with two task: 1) Understanding how Leaflet.js works to display comprehensive, easy-to-read maps, and 2) understanding how to use the React-leaflet package with a React app. 
+
+
+To begin, I completed the leaflet.js tutorial for a normal web application, which allowed to grasp the basics of how to include the map in the view files, as well as how thematic maps and pointers are added onto the map. Generally, it allowed me to visualize how I wanted the maps to look within our React app. 
+
+
+After I got a clear grasp on how Leaflet works as an API, I searched up and completed a tutorial on how to use it within the scope of our React project. I was able to install the correct package and include the correct leaflet tags within our components.
