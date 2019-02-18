@@ -1,0 +1,17 @@
+table {
+    width: 30%;
+    position: absolute;
+    left: 1%;
+}
+th{
+    width: 100%;
+}
+
+.allocationElt {
+    padding-left: 10%;
+}
+
+.Title {
+    position: relative;
+    left: 1%;
+}

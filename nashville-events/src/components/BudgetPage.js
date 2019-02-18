@@ -68,7 +68,7 @@ class BudgetSheet extends React.Component {
     }
 
     changePercentage(subtract, field, event) {
-        if(event.detail===0) {
+        if (event.detail === 0) {
             return;
         }
         console.log('changePercentage called');
@@ -148,117 +148,163 @@ class BudgetSheet extends React.Component {
         };
 
         return (
-            <form onSubmit={this.handleFormSubmit}>
-                <label>
-                    <h2>
-                        Yearly salary? (in thousands)
-                        <input type="number" value={this.state.value} onChange={this.handleChange}/>
-                    </h2>
-                </label>
-                <ul>
-                    <li>
-                        <div>
+            <form onSubmit={this.handleFormSubmit} className={"allocationList"}>
+                <table>
+                    <div classname="firstElt">
+                        Monthly salary? (in thousands)
+                    </div>
+                    <th><input type="number" value={this.state.value} onChange={this.handleChange}/>
+                    </th>
+                    <tr className={"allocationElt"}>
+                        <td className={"allocationName"}>
                             <BudgetAllocation name="Housing" percent={percentages.housing} total={salary}/>
-                            <ButtonSet name="housing"/>
+                        </td>
+                        <td>
+                            <ButtonSet name="housing" className={"buttons"}/>
+                        </td>
+                        <td>
                             <input type={"number"}
                                    step={.001}
                                    defaultValue={percentages.housing}
                                    name={"housing"}
                                    ref={(input) => this.housingPercent = input}
                             />
-                        </div>
-                    </li>
-                    <li>
-                        <BudgetAllocation name="Insurance" percent={percentages.insurance} total={salary}/>
-                        <ButtonSet name="insurance" />
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.insurance}
-                               name={"insurance"}
-                               ref={(input) => this.insurancePercent = input}
+                        </td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td>
+                            <BudgetAllocation name="Insurance" percent={percentages.insurance} total={salary}/>
+                        </td>
+                        <td>
+
+                            <ButtonSet name="insurance"/>
+                        </td>
+                        <td>
+
+                            <input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.insurance}
+                                   name={"insurance"}
+                                   ref={(input) => this.insurancePercent = input}
+                            />
+                        </td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td>
+                            <BudgetAllocation name="Food" percent={percentages.food} total={salary}/>
+                        </td>
+                        <td>
+                            <ButtonSet name="food"/>
+                        </td>
+                        <td>
+                            <input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.food}
+                                   name={"food"}
+                                   ref={(input) => this.foodPercent = input}
+                            />
+                        </td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td>
+                            <BudgetAllocation
+                                name="Transportation"
+                                percent={percentages.transportation}
+                                total={salary}
+                            />
+                        </td>
+                        <td>
+                            <ButtonSet name="transportation"/>
+                        </td>
+                        <td>
+                            <input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.transportation}
+                                   name={"transportation"}
+                                   ref={(input) => this.transportationPercent = input}
+                            /></td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td>
+                            <BudgetAllocation name="Utilities" percent={percentages.utilities} total={salary}/>
+                        </td>
+                        <td>
+                            <ButtonSet name="utilities"/>
+                        </td>
+                        <td>
+                            <input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.utilities}
+                                   name={"utilities"}
+                                   ref={(input) => this.utilitiesPercent = input}
+                            /></td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td>
+                            <BudgetAllocation name="Savings" percent={percentages.savings} total={salary}/>
+                        </td>
+                        <td><ButtonSet name="savings"/>
+                        </td>
+                        <td><input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.savings}
+                                   name={"savings"}
+                                   ref={(input) => this.savingsPercent = input}
+                        /></td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td>
+                            <BudgetAllocation name="Fun" percent={percentages.fun} total={salary}/>
+                        </td>
+                        <td><ButtonSet name="fun"/>
+                        </td>
+                        <td><input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.fun}
+                                   name={"fun"}
+                                   ref={(input) => this.funPercent = input}
                         />
-                    </li>
-                    <li>
-                        <BudgetAllocation name="Food" percent={percentages.food} total={salary}/>
-                        <ButtonSet name="food" />
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.food}
-                               name={"food"}
-                               ref={(input) => this.foodPercent = input}
-                        />
-                    </li>
-                    <li>
-                        <BudgetAllocation
-                            name="Transportation"
-                            percent={percentages.transportation}
-                            total={salary}
-                        />
-                        <ButtonSet name="transportation"/>
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.transportation}
-                               name={"transportation"}
-                               ref={(input) => this.transportationPercent = input}
-                        />
-                    </li>
-                    <li>
-                        <BudgetAllocation name="Utilities" percent={percentages.utilities} total={salary}/>
-                        <ButtonSet name="utilities" />
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.utilities}
-                               name={"utilities"}
-                               ref={(input) => this.utilitiesPercent = input}
-                        />
-                    </li>
-                    <li>
-                        <BudgetAllocation name="Savings" percent={percentages.savings} total={salary}/>
-                        <ButtonSet name="savings" />
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.savings}
-                               name={"savings"}
-                               ref={(input) => this.savingsPercent = input}
-                        />
-                    </li>
-                    <li>
-                        <BudgetAllocation name="Fun" percent={percentages.fun} total={salary}/>
-                        <ButtonSet name="fun" />
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.fun}
-                               name={"fun"}
-                               ref={(input) => this.funPercent = input}
-                        />
-                    </li>
-                    <li>
-                        <BudgetAllocation name="Clothing" percent={percentages.clothing} total={salary}/>
-                        <ButtonSet name="clothing"/>
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.clothing}
-                               name={"clothing"}
-                               ref={(input) => this.clothingPercent = input}
-                        />
-                    </li>
-                    <li>
-                        <BudgetAllocation name="Personal" percent={percentages.personal} total={salary}/>
-                        <ButtonSet name="personal" num={8}/>
-                        <input type={"number"}
-                               step={.001}
-                               defaultValue={percentages.personal}
-                               name={"personal"}
-                               ref={(input) => this.personalPercent = input}
-                        />
-                    </li>
-                </ul>
-                <input type={"submit"} value={"Submit"}/>
-                <h2>
-                    Total percent of entered income:
-                    {(totalPercent * 100).toFixed(1)}
-                    %
-                </h2>
+                        </td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td>
+                            <BudgetAllocation name="Clothing" percent={percentages.clothing} total={salary}/>
+                        </td>
+                        <td>
+                            <ButtonSet name="clothing"/>
+                        </td>
+                        <td>
+                            <input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.clothing}
+                                   name={"clothing"}
+                                   ref={(input) => this.clothingPercent = input}
+                            />
+                        </td>
+                    </tr>
+                    <tr className={"allocationElt"}>
+                        <td><BudgetAllocation name="Personal" percent={percentages.personal} total={salary}/>
+                        </td>
+                        <td><ButtonSet name="personal" num={8}/>
+                        </td>
+                        <td><input type={"number"}
+                                   step={.001}
+                                   defaultValue={percentages.personal}
+                                   name={"personal"}
+                                   ref={(input) => this.personalPercent = input}
+                        /></td>
+                    </tr>
+                    <tr className={"totalElt"}>
+                        <td>
+                            Total percent of entered income:
+                            {(totalPercent * 100).toFixed(1)}
+                            %
+                        </td>
+                        <td>
+                            <input type={"submit"} value={"Submit"}/>
+                        </td>
+                    </tr>
+                </table>
             </form>
         );
     }
