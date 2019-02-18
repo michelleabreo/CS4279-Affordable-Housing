@@ -1,0 +1,9 @@
+table {
+    width: 30%;
+    position: relative;
+    left: 50%;
+    text-align: center;
+}
+th{
+    width: 70%;
+}
