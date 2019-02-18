@@ -61,7 +61,7 @@ export default function Main() {
           <Route exact path="/" component={Home} />
           <Route path="/events" component={EventList} />
           <Route path="/budget" component={BudgetPage} />
-          <Route path="/map" component={MapView} />
+          <Route path="/map" component={Map} />
         </Switch>
         <Footer />
       </div>
