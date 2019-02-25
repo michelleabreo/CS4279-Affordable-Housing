@@ -17,3 +17,28 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
 
     React notes: React can only return one dom element, so sometimes you must wrap stuff in a div. 
     Anything in braces will execute as normal JS. 
+
+2/25 
+    back to the drawing board with our app! I don't have concrete coding to work on right now
+    so I'm learning webpack before learning more JavaScript, so 
+    I can be more useful! Webpack is a better module loader for react. 
+    https://www.youtube.com/watch?v=9kJVYpOqcVU
+    Modules are a way to split up code and build separately. A page has
+    a dependency on modules and have to be ordered a certain
+    way. ./ means starting in our directory, ../ going back a directory.
+    Install node.js - what is that?
+        https://www.youtube.com/watch?v=pU9Q6oiQNd0
+        Took JavaScript and allowed it to run on your computer, not the 
+        browser. v8 from chrome now works on your computer, can access 
+        files on your computer. 
+        Used for either building on the machine: utilities for
+        development. Can also be used for creating a web server. 
+     Webpack config file overview
+
+    ES 6 - used on node and react
+    BableJS for transpiling. 
+    Features - destructuring
+
+     Okay back to JS
+     https://www.youtube.com/watch?v=MhkGQAoc7bc
+     
