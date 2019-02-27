@@ -25,7 +25,7 @@ function initMap() {
     zoom: 14,
   });
   map.data.setStyle({
-    fillColor: 'grey',
+    fillColor: '#FFA500',
     strokeWeight: 1,
   });
   map.data.loadGeoJson(
@@ -35,7 +35,7 @@ function initMap() {
   let marker;
   map.data.addListener('mouseover', (event) => {
     map.data.revertStyle();
-    map.data.overrideStyle(event.feature, { fillColor: 'blue' });
+    map.data.overrideStyle(event.feature, { fillColor: 'white' });
     infoWindow = buildInfoCard(event.feature.l);
     const lat = event.latLng.lat();
     const lng = event.latLng.lng();
