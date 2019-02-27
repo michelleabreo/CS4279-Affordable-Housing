@@ -41,4 +41,14 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
 
      Okay back to JS
      https://www.youtube.com/watch?v=MhkGQAoc7bc
-     
+     4:00
+
+     Wrapping elements in parenthesis transpiles html to JavaScript, 
+     not weird cause JS creates HTML. Use Webpack to have a live-reload. 
+     Can either add to the url or create a script for it to run in the CL
+
+     Onto Tutorial #2
+     components return one DOM element. Must be wrapped in a div if 
+     there's multiple. Want to keep render method clean. 
+
+    Onto Tutorial #2
