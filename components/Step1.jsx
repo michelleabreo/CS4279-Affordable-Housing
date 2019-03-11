@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Button } from 'semantic-ui-react';
 
-class Step1 extends Component{
+class PersonalInfo extends Component{
 
     saveAndContinue = (e) => {
         e.preventDefault()
@@ -44,4 +44,4 @@ class Step1 extends Component{
     }
 }
 
-export default Step1;
+export default PersonalInfo;
