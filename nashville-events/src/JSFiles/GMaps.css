@@ -1,5 +1,4 @@
-/* Always set the map height explicitly to define the size of the div
- * element that contains the map. */
+@import url("https://fonts.googleapis.com/css?family=Aleo:700|Montserrat:500");
 
 #map {
   height: 75%;
@@ -12,4 +11,16 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: "Montserrat";
+  vertical-align: center;
+}
+
+.maps-button {
+  margin-top: 1%;
+}
+.maps-button button {
+  margin-left: 1%;
 }

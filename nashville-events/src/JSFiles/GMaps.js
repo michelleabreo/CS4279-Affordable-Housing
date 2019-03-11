@@ -7,7 +7,7 @@ function buildInfoCard(nHoodData) {
       + '</div>'
       + '<h1 id="firstHeading" class="firstHeading">'}${nHoodData.Name}</h1>`
       + '<div id="bodyContent">'
-      + '<p>'}${nHoodData.RegionID}</p>`
+      + '<p>Average Price: $'}${nHoodData.zindex}</p>`
     + '</div>'
     + '</div>';
   const infowindow = new google.maps.InfoWindow({
@@ -29,8 +29,9 @@ function initMap() {
     strokeWeight: 1,
   });
   map.data.loadGeoJson(
-    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Updated_Zillow.geojson',
+    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
   );
+
   let infoWindow;
   let marker;
   map.data.addListener('mouseover', (event) => {
