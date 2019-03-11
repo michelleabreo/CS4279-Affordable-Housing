@@ -1,4 +1,6 @@
 let map;
+let filteredMap;
+let nonFilteredMap;
 
 function buildInfoCard(nHoodData) {
   console.log(nHoodData.RegionID);
@@ -28,9 +30,8 @@ function initMap() {
     fillColor: '#FFA500',
     strokeWeight: 1,
   });
-  map.data.loadGeoJson(
-    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
-  );
+  bikeLayer.setMap(map);
+  trafficLayer.setMap(map);
 
   let infoWindow;
   let marker;
@@ -55,6 +56,32 @@ function initMap() {
     infoWindow.close();
     marker.setMap(null);
   });
-  bikeLayer.setMap(map);
-  trafficLayer.setMap(map);
+  nonFilteredMap = map.data.loadGeoJson(
+    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
+  );
+}
+
+function switchToFilteredMap() {
+  google.maps.event.addListenerOnce(map, 'idle', () => {
+    map.data.forEach((feature) => {
+      console.log(feature.l.zindex);
+      if (feature.l.zindex == 0) {
+        map.data.remove(feature);
+      }
+    });
+  });
+  map.data.setStyle({
+    fillColor: 'green',
+    strokeWeight: 1,
+  });
+}
+
+function switchToFullMap() {
+  map.data.loadGeoJson(
+    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
+  );
+  map.data.setStyle({
+    fillColor: '#FFA500',
+    strokeWeight: 1,
+  });
 }
