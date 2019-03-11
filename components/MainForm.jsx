@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import Step1 from './Step1';
-import Step2 from './Step2';
+import PersonalInfo from './PersonalInfo';
+import FinancialInfo from './FinancialInfo';
+import HouseReqInfo from './HouseReqInfo';
 import Confirmation from './Confirmation';
 import Success from './Success';
+import "semantic-ui-css/semantic.min.css";
+
 
 class MainForm extends Component {
     state = {
@@ -12,6 +15,8 @@ class MainForm extends Component {
         email: '',
         income: '',
         familySize: '',
+        numBedroom: '',
+        numBathroom: '',
 
     }
 
@@ -35,29 +40,36 @@ class MainForm extends Component {
 
     render(){
         const {step} = this.state;
-        const { firstName, lastName, email, income, familySize } = this.state;
-        const values = { firstName, lastName, email, income, familySize};
+        const { firstName, lastName, email, income, familySize, numBedroom, numBathroom } = this.state;
+        const values = { firstName, lastName, email, income, familySize , numBedroom, numBathroom };
         switch(step) {
         case 1:
-            return <Step1
+            return <PersonalInfo
                     nextStep={this.nextStep}
                     handleChange = {this.handleChange}
                     values={values}
                     />
         case 2:
-            return <Step2
+            return <FinancialInfo
                     nextStep={this.nextStep}
                     prevStep={this.prevStep}
                     handleChange = {this.handleChange}
                     values={values}
                     />
         case 3:
-            return <Confirmation
+            return <HouseReqInfo
                     nextStep={this.nextStep}
                     prevStep={this.prevStep}
+                    handleChange = {this.handleChange}
                     values={values}
                     />
         case 4:
+            return <Confirmation
+                nextStep={this.nextStep}
+                prevStep={this.prevStep}
+                values={values}
+            />
+        case 5:
             return <Success />
         }
     }
