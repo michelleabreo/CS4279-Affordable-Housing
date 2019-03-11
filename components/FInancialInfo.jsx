@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, Button } from 'semantic-ui-react';
 import { throws } from 'assert';
 
-class Step2 extends Component{
+class FinancialInfo extends Component{
     saveAndContinue = (e) => {
         e.preventDefault();
         this.props.nextStep();
@@ -14,7 +14,7 @@ class Step2 extends Component{
     }
 
     render(){
-        const { values } = this.props
+        const { values } = this.props;
         return(
         <Form color='blue' >
             <h1 className="ui centered">Step 2: Enter Financial and Family Information</h1>
@@ -39,4 +39,4 @@ class Step2 extends Component{
     }
 }
 
-export default Step2;
+export default FinancialInfo;
