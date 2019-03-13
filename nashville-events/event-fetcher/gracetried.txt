@@ -63,3 +63,13 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
     pages/routes folder that has components in it
 
     Onto #4
+    date gets handled through states or props
+    this.state is by default equal to null
+    can only set state in constructor
+    react manages a virtual DOM for you
+    updates only the changed elements, saves us a 
+    lot of time updating the DOM
+    this.setState automatically rerenders
+    use props if the change affects things
+    other than the one element
+ 
