@@ -51,4 +51,4 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
      components return one DOM element. Must be wrapped in a div if 
      there's multiple. Want to keep render method clean. 
 
-    Onto Tutorial #2
+    Completed the Design Day Doc!
