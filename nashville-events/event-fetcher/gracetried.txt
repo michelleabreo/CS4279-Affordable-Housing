@@ -52,3 +52,14 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
      there's multiple. Want to keep render method clean. 
 
     Completed the Design Day Doc!
+
+3/13
+    Onto Tutorial #3
+    in components folder making a component for layout
+    usually want these to be capitalized
+    import in client.js
+    Header is a constructor, name of a class
+    can also make a list variable
+    pages/routes folder that has components in it
+
+    Onto #4
