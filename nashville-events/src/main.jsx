@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router, Switch, Route, Link,
 } from 'react-router-dom';
 import './styling/main.css';
+import './styling/homepage.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap';
 import 'bootstrap/js/dist/util';
@@ -16,8 +17,8 @@ import Map from './components/Map.js';
 export default function Main() {
   return (
     <Router>
-      <div>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="homepage">
+        <nav className="routeNav navbar navbar-expand-lg navbar-light bg-dark">
           <b>Nash</b>
           <button
             className="navbar-toggler"
