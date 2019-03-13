@@ -1,7 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Aleo:700|Montserrat:500");
 
-#map {
+#mapBox {
   height: 75%;
+
+  width: 100%;
+}
+#map {
+  height: 100%;
+  width: 75%;
+  margin-left: 1%;
+  float: left;
+}
+#neighborhoodInfo {
+  margin-left: 77%;
 }
 
 /* Optional: Makes the sample page fill the window. */
@@ -16,6 +27,19 @@ body {
 h1 {
   font-family: "Montserrat";
   vertical-align: center;
+}
+
+h2 {
+  font-family: "Montserrat";
+}
+h3 {
+  font-family: "Montserrat";
+}
+h4 {
+  font-family: "Montserrat";
+}
+.mapTitle {
+  margin-left: 1%;
 }
 
 .maps-button {

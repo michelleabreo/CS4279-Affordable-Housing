@@ -6,16 +6,25 @@
         <meta charset="utf-8" />
     </head>
     <body>
-        <h1>Nashville Affordability Map</h1>
-        <div id="map"></div>
-        <script src="./GMaps.js"></script>
-        <script
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqZd-d-PeOiuVdmR5qwkln9lD74WUw5VU&callback=initMap"
-            async defer></script>
-        <div class="maps-button"><button onclick="switchToFullMap()">All
-                Neighborhoods</button><button
-                onclick="switchToFilteredMap()">Priced
-                Neighborhoods
-            </button></div>
+        <div class="mapTitle"> <h1>Nashville Affordability Map</h1> </div>
+        <div id="mapBox">
+            <div id="map"></div>
+            <div id="neighborhoodInfo">
+                <h2>Neighborhood Information</h2>
+                <div class="nSpecifics">
+                    <h3 id="nName">Name</h3>
+                    <h4>Avg. Home Value:<h4 id="nAvgVal"></h4></h4>
+                    <button id="zillowBtn">Access Zillow</button>
+                </div>
+            </div>
+        </div>
+        <div class="maps-button">
+            <button onclick="switchToFullMap()">All Neighborhoods</button>
+            <button onclick="switchToFilteredMap()">Priced Neighborhoods</button>
+        </div>
     </body>
+    <script src="./GMaps.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqZd-d-PeOiuVdmR5qwkln9lD74WUw5VU&callback=initMap"
+        async defer></script>
 </html>

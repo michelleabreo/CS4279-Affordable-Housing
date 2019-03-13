@@ -1,20 +1,23 @@
 let map;
 let filteredMap;
 let nonFilteredMap;
+let nHoodData;
 
-function buildInfoCard(nHoodData) {
-  console.log(nHoodData.RegionID);
-  const contentString = `${`${'<div id="content">'
-      + '<div id="siteNotice">'
-      + '</div>'
-      + '<h1 id="firstHeading" class="firstHeading">'}${nHoodData.Name}</h1>`
-      + '<div id="bodyContent">'
-      + '<p>Average Price: $'}${nHoodData.zindex}</p>`
-    + '</div>'
-    + '</div>';
+function usdFormat(x) {
+  return x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+}
+
+function buildInfoCard() {
+  console.log(nHoodData);
+  const contentString = `${'<div id="content">' + '<h1 id="firstHeading" class="firstHeading">'}${
+    nHoodData.Name
+  }</h1>` + '</div>';
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
   });
+  document.getElementById('nName').innerHTML = nHoodData.Name;
+  document.getElementById('nAvgVal').innerHTML = usdFormat(nHoodData.zindex);
+
   return infowindow;
 }
 
@@ -38,7 +41,8 @@ function initMap() {
   map.data.addListener('mouseover', (event) => {
     map.data.revertStyle();
     map.data.overrideStyle(event.feature, { fillColor: 'white' });
-    infoWindow = buildInfoCard(event.feature.l);
+    nHoodData = event.feature.l;
+    infoWindow = buildInfoCard();
     const lat = event.latLng.lat();
     const lng = event.latLng.lng();
     marker = new google.maps.Marker({
@@ -62,6 +66,7 @@ function initMap() {
 }
 
 function switchToFilteredMap() {
+  map.data.setStyle({});
   google.maps.event.addListenerOnce(map, 'idle', () => {
     map.data.forEach((feature) => {
       console.log(feature.l.zindex);
@@ -74,9 +79,11 @@ function switchToFilteredMap() {
     fillColor: 'green',
     strokeWeight: 1,
   });
+  google.maps.event.trigger(map, 'resize');
 }
 
 function switchToFullMap() {
+  map.data.setStyle({});
   map.data.loadGeoJson(
     'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
   );
@@ -84,4 +91,10 @@ function switchToFullMap() {
     fillColor: '#FFA500',
     strokeWeight: 1,
   });
+  google.maps.event.trigger(map, 'resize');
 }
+
+document.getElementById('zillowBtn').onclick = function () {
+  const url = `https://www.zillow.com/homes/for_rent/${nHoodData.Name}-nashville-tn/`;
+  window.open(url, '_blank');
+};
