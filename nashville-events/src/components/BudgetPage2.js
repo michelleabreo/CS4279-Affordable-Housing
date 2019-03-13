@@ -44,55 +44,60 @@ class Budget extends Component {
             },
         };
     }
-}
 
-class ExpenditureTable extends Component {
-    constructor(props) {
-        super(props);
+    handleFoodChange(event) {
+        let tmpPercents = this.state.percentages;
+        tmpPercents.food = event.target.value;
+        this.setState({percentages: tmpPercents});
+
     }
 
     render() {
+        const ExpenditureChange = (parameters) => {
+            return(
+                <td>
+                    <div>
+                        <input type={"number"}
+                               step={.001}
+                               defaultValue={parameters.perc}
+                               name={"food"}
+                               onSubmit={parameters.func} />
+                    </div>
+                    <div>
+                        Button to change percent
+                    </div>
+                </td>
+            );
+        };
+
+        const ExpenditureRow = (parameters) => {
+            return(
+                <tr>
+                    <td>{parameters.category}</td>
+                    <td>{parameters.percent * this.state.salary}</td>
+                    <td><ExpenditureChange perc={parameters.percent} func={parameters.func}/></td>
+                </tr>
+            );
+        };
+
+        const ExpenditureTable = () => {
+            return(
+                <table>
+                    <th>Expenditures</th>
+                    <tr>
+                        <ExpenditureRow
+                            category={"Food"}
+                            percent={this.state.percentages.food}
+                            func={this.handleFoodChange}/>
+                    </tr>
+                </table>
+            );
+        };
+
         return(
-            <table>
-                <th>Expenditures</th>
-                <tr>{/*insert table rows here*/}</tr>
-            </table>
+            <ExpenditureTable />
         );
-    }
-}
 
-class ExpenditureRow extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return(
-            <tr>
-                <td>Food</td>
-                <td>Price</td>
-                <td>Buttons to change</td>
-            </tr>
-        );
-    }
-}
-
-class ExpenditureChange extends Component {
-    constructor(props) {
-        super(props);
-    }
-
-    render() {
-        return(
-            <td>
-                <div>
-                    Form to change percent
-                </div>
-                <div>
-                    Button to change percent
-                </div>
-            </td>
-        );
     }
 }
 
