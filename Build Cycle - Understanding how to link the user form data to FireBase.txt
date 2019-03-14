@@ -1,0 +1,4 @@
+﻿Build Cycle - Understanding how to link the user form data to FireBase - Omomayowa Adebanjo
+
+
+Currently, we have a working form that carries user data through multiple components. Our application then takes the resulting data and processes it to display certain components on the screen (i.e. map, yelp API, Zillow API). What I am currently trying to figure out is how to link the processed data to a firebase database so that we can save their information for another use session. This feature will be linked to our log-in system that allows a user to access previously entered and saved information on the next load-up of our application.
