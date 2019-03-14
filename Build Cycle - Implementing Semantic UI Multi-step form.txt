@@ -1,0 +1,4 @@
+﻿Build Cycle - Implementing Semantic UI Multi-step form - Omomayowa Adebanjo
+
+
+We have decided to use the Semantic UI Multi-step form to collect data from our users. This was in response to the feedback we received from the mayor’s office to implement a “TurboTax”-like format to our application to make it easier for the user to use. Michelle did a lot of the actual tailoring of the form to our data needs, while I linked the step-form components to our already made application routing and displayed it on the home page for testing.

@@ -58,7 +58,7 @@ class MainForm extends Component {
                     values={values}
                     />
         case 4:
-            return <Success />
+            return <Success information={this.state} />
         }
     }
 }

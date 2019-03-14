@@ -5,6 +5,11 @@ class Success extends Component{
         return(
             <div>
                 <h1 className="ui centered">Details Successfully Saved</h1>
+                <h1 className="ui centered">{this.props.information.firstName}</h1>
+                <h1 className="ui centered">Details Successfully Saved</h1>
+                <h1 className="ui centered">Details Successfully Saved</h1>
+                <h1 className="ui centered">Details Successfully Saved</h1>
+
             </div>
         )
     }
