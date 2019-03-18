@@ -68,8 +68,32 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
     can only set state in constructor
     react manages a virtual DOM for you
     updates only the changed elements, saves us a 
-    lot of time updating the DOM
+    lot of time updating the DOM (document object model)
     this.setState automatically rerenders
     use props if the change affects things
     other than the one element
- 
+3/18
+    don't change it unless it's in the object 
+    render method
+
+    onto 5
+    events and data changes
+    have to change the state to have website change
+    changeTitle method, always use .bind(this)
+    so its called on the element you want
+    make sure you have onChange if you want to
+    change a value
+
+    i feel like these are geared towards people
+    who already know JS, so I'm gonna watch a
+    tutorial on that
+
+    JS code can be run in a browser or node
+    https://www.youtube.com/watch?v=W6NZfCO5SIk
+    15:00
+    doing a tutorial 
+    scripts at the end so website can load
+    separation of concerns
+    HTML - content, JS - behavior
+    src = "index.js" in scripts
+    VSCode integrated terminal
