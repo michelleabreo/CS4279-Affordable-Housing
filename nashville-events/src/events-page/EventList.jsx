@@ -4,23 +4,24 @@ import firebase from '../firebase';
 
 const db = firebase.firestore();
 
-export default function EventList() {
-  db.collection('nashville_events')
-    .get()
-    .then((querySnapshot) => {
-      querySnapshot.forEach((doc) => {
-        console.log(`${doc.id} => ${doc.data().Name}`);
+export default class EventList extends React.Component {
+  createEventList = () => {
+    const events = [];
+    db.collection('nashville_events')
+      .get()
+      .then((querySnapshot) => {
+        querySnapshot.forEach((doc) => {
+          events.push(
+            <ListGroupItem header={doc.data().Name} href="#">
+              {doc.data().Location}
+            </ListGroupItem>,
+          );
+        });
       });
-    });
-  return (
-    <ListGroup>
-      <ListGroupItem header="In the Round" href="#">
-        Bluebird Cafe, Nightly
-      </ListGroupItem>
-      <ListGroupItem header="Heading 2" href="#">
-        Linked item
-      </ListGroupItem>
-      <ListGroupItem header="Heading 3">Danger styling</ListGroupItem>
-    </ListGroup>
-  );
+    return events;
+  };
+
+  render() {
+    return <ListGroup>{this.createEventList()}</ListGroup>;
+  }
 }

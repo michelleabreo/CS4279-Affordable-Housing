@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styling/events.css';
 import EventList from '../events-page/EventList';
+import EventCard from '../events-page/EventCard';
 
 export default function Events() {
   return (
@@ -9,6 +10,7 @@ export default function Events() {
         <h1>Events</h1>
         <EventList />
       </div>
+      <EventCard />
     </div>
   );
 }

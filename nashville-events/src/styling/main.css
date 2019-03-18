@@ -8,11 +8,12 @@ body {
 }
 
 /* Navbar Styling */
-.navbar {
+.routeNav {
   position: fixed;
-  background-color: transparent;
-  background: transparent;
-  border-color: transparent;
+  background-color: transparent !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  margin-bottom: 0px !important;
 }
 .navbar li {
   color: #000;
