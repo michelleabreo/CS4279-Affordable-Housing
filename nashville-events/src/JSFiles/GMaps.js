@@ -7,6 +7,43 @@ function usdFormat(x) {
   return x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
 }
 
+function createCORSRequest(method, url) {
+  let xhr = new XMLHttpRequest();
+  if ('withCredentials' in xhr) {
+    // Check if the XMLHttpRequest object has a "withCredentials" property.
+    // "withCredentials" only exists on XMLHTTPRequest2 objects.
+    xhr.open(method, url, true);
+  } else if (typeof XDomainRequest !== 'undefined') {
+    // Otherwise, check if XDomainRequest.
+    // XDomainRequest only exists in IE, and is IE's way of making CORS requests.
+    xhr = new XDomainRequest();
+    xhr.open(method, url);
+  } else {
+    // Otherwise, CORS is not supported by the browser.
+    xhr = null;
+  }
+  return xhr;
+}
+
+function populateNeighborhoodData() {
+  const url = 'https://api.yelp.com/v3/businesses/search';
+  const xhr = createCORSRequest('GET', url);
+  if (!xhr) {
+    throw new Error('CORS not supported');
+  }
+  // Http.open('GET', url);
+  // Http.setRequestHeader('X-PINGOTHER', 'pingpong');
+  xhr.setRequestHeader(
+    'Authorization',
+    'nJvRCUJ94q0VVptIYGXzrzauyTaITN9k2mHFyquWt_8-t_zS6Mdit2TmDw_Wtaw-5dYTUjHzw2v0uihDjEt8x8a_1LBv34IDp8RgVztNzVBNOrmyQNT42z8amWSIXHYx',
+  );
+  console.log(xhr.re)
+  xhr.send();
+  xhr.onreadystatechange = (e) => {
+    console.log(xhr.responseText);
+  };
+}
+
 function buildInfoCard() {
   console.log(nHoodData);
   const contentString = `${'<div id="content">' + '<h1 id="firstHeading" class="firstHeading">'}${
@@ -16,8 +53,8 @@ function buildInfoCard() {
     content: contentString,
   });
   document.getElementById('nName').innerHTML = nHoodData.Name;
-  document.getElementById('nAvgVal').innerHTML = usdFormat(nHoodData.zindex);
-
+  document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
+  populateNeighborhoodData();
   return infowindow;
 }
 
@@ -97,4 +134,12 @@ function switchToFullMap() {
 document.getElementById('zillowBtn').onclick = function () {
   const url = `https://www.zillow.com/homes/for_rent/${nHoodData.Name}-nashville-tn/`;
   window.open(url, '_blank');
+};
+
+document.getElementById('allHoods').onclick = function () {
+  switchToFullMap();
+};
+
+document.getElementById('pricedHoods').onclick = function () {
+  switchToFilteredMap();
 };

@@ -48,6 +48,11 @@ export default function Main() {
                     Budget
                   </Link>
                 </li>
+                <li>
+                  <Link to="/map" className="nav-link">
+                    Map
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
@@ -56,6 +61,14 @@ export default function Main() {
           <Route exact path="/" component={Home} />
           <Route path="/events" component={EventList} />
           <Route path="/budget" component={BudgetPage} />
+
+          <Route
+            path="map"
+            component={() => {
+              window.location = '/Users/danielgonzalez/Documents/GitHub/dgonzal97/CS4279-Affordable-Housing/nashville-events/src/JSFiles/GMaps.html';
+              return null;
+            }}
+          />
         </Switch>
         <Footer />
       </div>
