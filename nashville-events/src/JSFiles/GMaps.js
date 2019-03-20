@@ -16,8 +16,7 @@ function buildInfoCard() {
     content: contentString,
   });
   document.getElementById('nName').innerHTML = nHoodData.Name;
-  document.getElementById('nAvgVal').innerHTML = usdFormat(nHoodData.zindex);
-
+  document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
   return infowindow;
 }
 
@@ -97,4 +96,12 @@ function switchToFullMap() {
 document.getElementById('zillowBtn').onclick = function () {
   const url = `https://www.zillow.com/homes/for_rent/${nHoodData.Name}-nashville-tn/`;
   window.open(url, '_blank');
+};
+
+document.getElementById('allHoods').onclick = function () {
+  switchToFullMap();
+};
+
+document.getElementById('pricedHoods').onclick = function () {
+  switchToFilteredMap();
 };
