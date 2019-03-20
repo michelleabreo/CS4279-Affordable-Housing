@@ -97,3 +97,6 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
     HTML - content, JS - behavior
     src = "index.js" in scripts
     VSCode integrated terminal
+
+3/20
+     19:00 using variables in js now!
