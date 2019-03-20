@@ -44,6 +44,8 @@ function initMap() {
     infoWindow = buildInfoCard();
     const lat = event.latLng.lat();
     const lng = event.latLng.lng();
+    console.log(lat);
+    console.log(lng);
     marker = new google.maps.Marker({
       position: {
         lat,
