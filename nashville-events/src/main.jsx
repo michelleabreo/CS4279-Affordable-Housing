@@ -13,8 +13,6 @@ import Home from './components/Home';
 import EventList from './components/Events';
 import BudgetPage from './components/BudgetPage';
 import MultiStepForm from './components/MultiStepForm';
-
-
 import Map from './components/Map.js';
 
 export default function Main() {
