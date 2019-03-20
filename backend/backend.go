@@ -3,8 +3,11 @@ package main
 import (
     "fmt"
     "io/ioutil"
-	"net/http"
-	"errors"
+    "net/http"
+    "net/url"
+    "errors"
+    "strings"
+	// "github.com/JustinBeckwith/go-yelp/yelp"
 )
 
 func redirectPolicyFunc(req *http.Request, via []*http.Request) error {
@@ -12,14 +15,23 @@ func redirectPolicyFunc(req *http.Request, via []*http.Request) error {
 }
 
 func main() {
-	fmt.Println("Starting the application...")
+    fmt.Println("Starting the application...")
+    
 	client := &http.Client{
 		CheckRedirect: redirectPolicyFunc,
-	}
+    }
+    
+    data := url.Values{}
+    data.Set("Location", "San Francisco")
 	var bearer = "Bearer " + "nJvRCUJ94q0VVptIYGXzrzauyTaITN9k2mHFyquWt_8-t_zS6Mdit2TmDw_Wtaw-5dYTUjHzw2v0uihDjEt8x8a_1LBv34IDp8RgVztNzVBNOrmyQNT42z8amWSIXHYx"
+    req, err := http.NewRequest("GET", "https://api.yelp.com/v3/businesses/search", strings.NewReader(data.Encode()))
 
-	req, err := http.NewRequest("GET", "https://api.yelp.com/v3/businesses/search", nil)
+  
+
+    
     req.Header.Add("Authorization",bearer)
+
+    fmt.Println(req)
 
     resp, err := client.Do(req)
     if err != nil {
