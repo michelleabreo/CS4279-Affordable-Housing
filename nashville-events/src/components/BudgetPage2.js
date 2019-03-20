@@ -46,100 +46,105 @@ class Budget extends Component {
         };
 
         this.handleSalaryChange = this.handleSalaryChange.bind(this);
-        this.handleFormSubmit = this.handleFormSubmit.bind(this);
-        this.handleFoodChange = this.handleFoodChange.bind(this);
-    }
 
-    handleFoodChange(event) {
-        console.log("handleFoodChange called.");
-        let tmpPercents = this.state.percentages;
-        tmpPercents.food = event.target.value;
-        this.setState({percentages: tmpPercents});
+        this.handleHousingPercentChange = this.handleHousingPercentChange.bind(this);
+        this.handleInsurancePercentChange = this.handleInsurancePercentChange.bind(this);
+        this.handleFoodPercentChange = this.handleFoodPercentChange.bind(this);
+        this.handleTransportationPercentChange = this.handleTransportationPercentChange.bind(this);
+        this.handleUtilitiesPercentChange = this.handleUtilitiesPercentChange.bind(this);
+        this.handleSavingsPercentChange = this.handleSavingsPercentChange.bind(this);
+        this.handleFunPercentChange = this.handleFunPercentChange.bind(this);
+        this.handleClothingPercentChange = this.handleClothingPercentChange.bind(this);
+        this.handlePersonalPercentChange = this.handlePersonalPercentChange.bind(this);
     }
 
     handleSalaryChange(event) {
         this.setState({salary: event.target.value});
     }
 
-    handleFormSubmit(event) {
-        event.preventDefault();
-        console.log('handleFormSubmit called');
-        const tmpPercents = this.state.percentages;
-
-
-        tmpPercents.housing = parseFloat(this.housingPercent.value);
-        tmpPercents.insurance = parseFloat(this.insurancePercent.value);
-        tmpPercents.food = parseFloat(this.foodPercent.value);
-
-        {/*
-        tmpPercents.transportation = parseFloat(this.transportationPercent.value);
-        tmpPercents.utilities = parseFloat(this.utilitiesPercent.value);
-        tmpPercents.savings = parseFloat(this.savingsPercent.value);
-        tmpPercents.fun = parseFloat(this.funPercent.value);
-        tmpPercents.clothing = parseFloat(this.clothingPercent.value);
-        tmpPercents.personal = parseFloat(this.personalPercent.value);
-        */
-        }
-
-
+    handleHousingPercentChange(event) {
+        console.log("handleHousingPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.housing = event.target.value;
         this.setState({percentages: tmpPercents});
-
     }
 
+    handleFoodPercentChange(event) {
+        console.log("handleFoodPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.food = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+    handleInsurancePercentChange(event) {
+        console.log("handleInsurancePercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.insurance = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+    handleTransportationPercentChange(event) {
+        console.log("handleTransportationPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.transportation = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+    handleUtilitiesPercentChange(event) {
+        console.log("handleUtilitiesPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.utilities = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+    handleSavingsPercentChange(event) {
+        console.log("handleSavingsPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.savings = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+    handleFunPercentChange(event) {
+        console.log("handleFunPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.fun = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+    handleClothingPercentChange(event) {
+        console.log("handleClothingPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.clothing = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+    handlePersonalPercentChange(event) {
+        console.log("handlePersonalPercentChange called: " + event.target.value);
+        let tmpPercents = this.state.percentages;
+        tmpPercents.personal = event.target.value;
+        this.setState({percentages: tmpPercents});
+    }
+
+
+
     render() {
-        const ExpenditureChange = (parameters) => {
-            return (
-                <td>
-                    <input type={"number"}
-                           step={.001}
-                           defaultValue={parameters.perc}
-                           name={"food"}
-                           ref={(input) => this.foodPercent = input}
-                    />
-                </td>
-            );
+        let functionArray = {
+            housing: this.handleHousingPercentChange,
+            insurance: this.handleInsurancePercentChange,
+            food: this.handleFoodPercentChange,
+            transportation: this.handleTransportationPercentChange,
+            utilities: this.handleUtilitiesPercentChange,
+            savings: this.handleSavingsPercentChange,
+            fun: this.handleFunPercentChange,
+            clothing: this.handleClothingPercentChange,
+            personal: this.handlePersonalPercentChange
         };
 
-        const ExpenditureRow = (parameters) => {
-            return (
-                <tr>
-                    <td>{parameters.category} ({parameters.percent * 100}%):</td>
-                    <td>{parameters.percent * this.state.salary}</td>
-                    <td>
-                        <ExpenditureChange
-                            perc={parameters.percent}
-                            varToChange={parameters.ref}
-                        />
-                    </td>
-                </tr>
-            );
-        };
 
-        const ExpenditureTable = () => {
-            return (
-                <div>
-                    <form onSubmit={this.handleFormSubmit}>
-                        <ExpenditureRow
-                            category={"Housing"}
-                            percent={this.state.percentages.housing}
-                            ref={this.housingPercent}
-                        />
-                        <ExpenditureRow
-                            category={"Insurance"}
-                            percent={this.state.percentages.insurance}
-                            ref={this.insurancePercent}
-                        />
-                        <ExpenditureRow
-                            category={"Food"}
-                            percent={this.state.percentages.food}
-                            ref={this.foodPercent}
-                        />
-                        <ExpenditureRow
-                            category/>
-                    </form>
-                </div>
-            );
-        };
+        let totalPercent = 0;
+        for (let x in this.state.percentages) {
+            totalPercent += x;
+        }
 
         return (
             <table>
@@ -150,13 +155,102 @@ class Budget extends Component {
                            onChange={this.handleSalaryChange}/>
                 </tr>
                 <tr>
-                    <ExpenditureTable/>
+                    <ExpenditureTable percentages={this.state.percentages}
+                                      functions={functionArray}
+                                      salary={this.state.salary}
+                    />
+                </tr>
+                <tr>
+                    Total percent: {totalPercent*100}%
                 </tr>
             </table>
         );
 
     }
 }
+
+function ExpenditureChange(parameters) {
+    return (
+        <div>
+            {parameters.func}
+            <input type={"number"}
+                   step={.001}
+                   value={parameters.perc}
+                   onChange={parameters.func}
+            />
+        </div>
+    );
+};
+
+function ExpenditureRow(parameters) {
+    return (
+        <tr>
+            <td>{parameters.category} ({(parameters.percent * 100).toFixed(2)}%):</td>
+            <td>{(parameters.percent * parameters.salary).toFixed(2)}</td>
+            <td>
+                <ExpenditureChange
+                    perc={parameters.percent}
+                    func={parameters.function}
+                />
+            </td>
+        </tr>
+    );
+};
+
+function ExpenditureTable(parameters) {
+    return (
+        <div>
+            <ExpenditureRow
+                category={"Food"}
+                percent={parameters.percentages.food}
+                function={parameters.functions.food}
+                salary={parameters.salary}
+            />
+            <ExpenditureRow
+                category={"Insurance"}
+                percent={parameters.percentages.insurance}
+                function={parameters.functions.insurance}
+                salary={parameters.salary}
+            />
+            <ExpenditureRow
+                category={"Housing"}
+                percent={parameters.percentages.housing}
+                function={parameters.functions.housing}
+                salary={parameters.salary}
+            />
+            <ExpenditureRow
+                category={"Transportation"}
+                percent={parameters.percentages.transportation}
+                function={parameters.functions.transportation}
+                salary={parameters.salary}
+            />
+            <ExpenditureRow
+                category={"Utilities"}
+                percent={parameters.percentages.utilities}
+                function={parameters.functions.utilities}
+                salary={parameters.salary}
+            />
+            <ExpenditureRow
+                category={"Savings"}
+                percent={parameters.percentages.savings}
+                function={parameters.functions.savings}
+                salary={parameters.salary}
+            />
+            <ExpenditureRow
+                category={"Fun"}
+                percent={parameters.percentages.fun}
+                function={parameters.functions.fun}
+                salary={parameters.salary}
+            />
+            <ExpenditureRow
+                category={"Personal"}
+                percent={parameters.percentages.personal}
+                function={parameters.functions.personal}
+                salary={parameters.salary}
+            />
+        </div>
+    );
+};
 
 
 export default BudgetPage2;

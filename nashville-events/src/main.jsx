@@ -10,7 +10,7 @@ import 'bootstrap/js/dist/dropdown';
 import Footer from './components/Footer';
 import Home from './components/Home';
 import EventList from './components/Events';
-import BudgetPage from './components/BudgetPage';
+import BudgetPage2 from './components/BudgetPage2';
 import Map from './components/Map.js';
 
 export default function Main() {
@@ -60,7 +60,7 @@ export default function Main() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/events" component={EventList} />
-          <Route path="/budget" component={BudgetPage} />
+          <Route path="/budget" component={BudgetPage2} />
           <Route path="/map" component={Map} />
         </Switch>
         <Footer />
