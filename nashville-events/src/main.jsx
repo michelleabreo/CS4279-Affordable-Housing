@@ -13,7 +13,6 @@ import Home from './components/Home';
 import EventList from './components/Events';
 import BudgetPage from './components/BudgetPage';
 import MultiStepForm from './components/MultiStepForm';
-import Map from './components/Map.js';
 
 export default function Main() {
   return (
@@ -50,11 +49,11 @@ export default function Main() {
                       Budget
                     </Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link to="/map" className="nav-link">
                       Map
                     </Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link to="/multistepform" className="nav-link">
                       Sign Up
@@ -68,7 +67,7 @@ export default function Main() {
             <Route exact path="/" component={Home} />
             <Route path="/events" component={EventList} />
             <Route path="/budget" component={BudgetPage} />
-            <Route path="/map" component={Map} />
+            {/* <Route path="/map" a href="../JSFiles/GSMaps.html" /> */}
             <Route path="/multistepform" component={MultiStepForm} />
           </Switch>
           <Footer />
