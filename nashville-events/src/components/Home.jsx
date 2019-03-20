@@ -1,5 +1,6 @@
 import React from 'react';
+import MainForm from './MainForm';
 
 export default function Home() {
-  return <div>Homepage</div>;
+  return <div><MainForm/></div>;
 }
