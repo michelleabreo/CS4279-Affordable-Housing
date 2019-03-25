@@ -37,9 +37,9 @@ function pushToFirebase(eventInfo) {
   console.log(eventInfo[0]);
   db.collection('nashville_events')
     .add({
-      Name: String(eventInfo[0]),
-      Location: String(eventInfo[1]),
-      Date: String(eventInfo[2]),
+      Name: String(eventInfo[0]).trim(),
+      Location: String(eventInfo[1]).trim(),
+      Date: String(eventInfo[2]).trim(),
       Type: 'event',
     })
     .then(() => {
