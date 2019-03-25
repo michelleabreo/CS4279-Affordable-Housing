@@ -15,8 +15,8 @@ function buildInfoCard() {
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
   });
-  document.getElementById('nName').innerHTML = nHoodData.Name;
-  document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
+  // document.getElementById('nName').innerHTML = nHoodData.Name;
+  // document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
   return infowindow;
 }
 
@@ -37,11 +37,32 @@ function initMap() {
 
   let infoWindow;
   let marker;
+  let open = false;
+  
   map.data.addListener('mouseover', (event) => {
+    if(infoWindow==null){
+      map.data.revertStyle();
+      map.data.overrideStyle(event.feature, { fillColor: 'white' });
+      nHoodData = event.feature.l;
+      // update the side window
+      document.getElementById('nName').innerHTML = nHoodData.Name;
+      document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
+
+    }
+  });
+
+  map.data.addListener('click', (event) => {
     map.data.revertStyle();
+    if(open){
+      marker.setMap(null); // reset our cards if clicking new neighborhood
+      infoWindow.close();
+      open = false;
+    }
     map.data.overrideStyle(event.feature, { fillColor: 'white' });
     nHoodData = event.feature.l;
     infoWindow = buildInfoCard();
+    document.getElementById('nName').innerHTML = nHoodData.Name;
+    document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
     const lat = event.latLng.lat();
     const lng = event.latLng.lng();
     console.log(lat);
@@ -54,13 +75,19 @@ function initMap() {
       map,
       title: 'RegionID',
     });
-    infoWindow.open(map, marker);
+    infoWindow.open(map, marker)
+    open = true;
   });
+
+  // map.data.addListener(infoWindow, 'closeclick', function() {
+  //   map.data.revertStyle();
+  //   open = false;
+  // });
+
   map.data.addListener('mouseout', () => {
     map.data.revertStyle();
-    infoWindow.close();
-    marker.setMap(null);
   });
+
   nonFilteredMap = map.data.loadGeoJson(
     'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
   );
