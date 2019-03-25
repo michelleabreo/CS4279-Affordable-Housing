@@ -99,4 +99,25 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
     VSCode integrated terminal
 
 3/20
-     19:00 using variables in js now!
+     19:00 doing a tutorial using variables 
+     in js now! 
+     
+3/25
+     let for variable, const for constant
+     dynamically typed, type of variable can change
+     all numbers of type number
+     reference types in JS
+     object - object literal {put keys or properties
+     (variables in the object) in here}
+     person['name'] == person.name
+     with bracket notation you can have a variable
+     for the variable changeTitle
+
+     array just like Java, but can add additional 
+     spots
+     function greet(name) {
+         console.leg('Hello ' + name)
+     }
+
+     greet('John');
+     default to undefined
