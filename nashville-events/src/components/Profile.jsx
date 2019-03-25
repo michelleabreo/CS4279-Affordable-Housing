@@ -5,7 +5,6 @@ import {Grid, Button, Form, List} from 'semantic-ui-react';
 class Profile extends Component{
     render(){
         const {values: { firstName, lastName, email, income, familySize, numBedroom, numBathroom }} = this.props;
-
         return(
             <Grid container>
                 <Grid.Column width={10}>
