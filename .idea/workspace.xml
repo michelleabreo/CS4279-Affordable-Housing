@@ -4,7 +4,7 @@
     <list default="true" id="9fee32aa-fc51-4e33-8d0f-03f37b0a0a02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nashville-events/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="133" column="8" selection-start-line="133" selection-start-column="8" selection-end-line="137" selection-end-column="9" />
+            <state relative-caret-position="2040">
+              <caret line="137" column="9" selection-start-line="121" selection-start-column="8" selection-end-line="137" selection-end-column="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -32,13 +32,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="146" column="43" lean-forward="true" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+            <state relative-caret-position="-989">
+              <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
                 <element signature="n#!!block;n#handleSalaryChange#0;n#Budget#0" />
                 <element signature="n#!!block;n#handleHousingPercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleFoodChange#0;n#Budget#0" />
                 <element signature="n#!!block;n#handleInsurancePercentChange#0;n#Budget#0" />
                 <element signature="n#!!block;n#handleTransportationPercentChange#0;n#Budget#0" />
                 <element signature="n#!!block;n#handleUtilitiesPercentChange#0;n#Budget#0" />
@@ -52,10 +51,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nashville-events/src/main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-300">
-              <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+            <state relative-caret-position="735">
+              <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -86,6 +94,7 @@
       <find>housingPercent</find>
       <find>ref</find>
       <find>SalaryChange</find>
+      <find>expenditure-row</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,11 +121,11 @@
         <option value="$PROJECT_DIR$/nashville-events/src/styling/main.css" />
         <option value="$PROJECT_DIR$/nashville-events/artifacts/learning_02_27" />
         <option value="$PROJECT_DIR$/nashville-events/artifacts/artifact_03_11" />
-        <option value="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" />
         <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPag2.js" />
         <option value="$PROJECT_DIR$/crawlers/zillowCrawler.py" />
         <option value="$PROJECT_DIR$/nashville-events/src/main.jsx" />
         <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js" />
+        <option value="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" />
         <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js" />
       </list>
     </option>
@@ -133,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -181,7 +191,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -231,7 +240,8 @@
       <workItem from="1552336678931" duration="84000" />
       <workItem from="1552442357062" duration="2310000" />
       <workItem from="1552939665441" duration="4404000" />
-      <workItem from="1553113541366" duration="4544000" />
+      <workItem from="1553113541366" duration="5925000" />
+      <workItem from="1553455737468" duration="1447000" />
     </task>
     <task id="LOCAL-00001" summary="First draft budget page">
       <created>1548281770212</created>
@@ -282,17 +292,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552944579013</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixed text box unfocusing on budget page">
+      <created>1553120130129</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1553120130129</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48848000" />
+    <option name="totallyTimeSpent" value="51676000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3516561" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3516561" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -304,7 +321,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32891566" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29156625" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -342,7 +359,8 @@
     <MESSAGE value="Fixed input field to change the percentage of each budget allocation" />
     <MESSAGE value="artifact for 2/27" />
     <MESSAGE value="Adding input fields to budget page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding input fields to budget page" />
+    <MESSAGE value="Fixed text box unfocusing on budget page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed text box unfocusing on budget page" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/budget.js" />
@@ -436,13 +454,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" lean-forward="true" selection-start-column="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/crawlers/zillowCrawler.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -473,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="133" column="8" selection-start-line="133" selection-start-column="8" selection-end-line="137" selection-end-column="9" />
+        <state relative-caret-position="2040">
+          <caret line="137" column="9" selection-start-line="121" selection-start-column="8" selection-end-line="137" selection-end-column="9" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -483,23 +494,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/nashville-events/src/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-300">
-          <caret line="22" column="38" selection-start-line="22" selection-start-column="38" selection-end-line="22" selection-end-column="38" />
+        <state relative-caret-position="735">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="146" column="43" lean-forward="true" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+        <state relative-caret-position="-989">
+          <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
             <element signature="n#!!block;n#handleSalaryChange#0;n#Budget#0" />
             <element signature="n#!!block;n#handleHousingPercentChange#0;n#Budget#0" />
-            <element signature="n#!!block;n#handleFoodChange#0;n#Budget#0" />
             <element signature="n#!!block;n#handleInsurancePercentChange#0;n#Budget#0" />
             <element signature="n#!!block;n#handleTransportationPercentChange#0;n#Budget#0" />
             <element signature="n#!!block;n#handleUtilitiesPercentChange#0;n#Budget#0" />

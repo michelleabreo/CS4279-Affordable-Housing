@@ -17,7 +17,7 @@ class BudgetPage2 extends Component {
         return (
             <div className={"Budget Page"}>
                 <header>
-                    <h1>Budget Page 2: The better version</h1>
+                    <h2>Create your budget here:</h2>
                 </header>
                 <body>
                 <Budget/>
@@ -126,7 +126,6 @@ class Budget extends Component {
     }
 
 
-
     render() {
         let functionArray = {
             housing: this.handleHousingPercentChange,
@@ -141,27 +140,38 @@ class Budget extends Component {
         };
 
 
+        const percentageArray = [
+            this.state.percentages.housing,
+            this.state.percentages.insurance,
+            this.state.percentages.food,
+            this.state.percentages.transportation,
+            this.state.percentages.utilities,
+            this.state.percentages.savings,
+            this.state.percentages.fun,
+            this.state.percentages.clothing,
+            this.state.percentages.personal,
+        ];
+
         let totalPercent = 0;
-        for (let x in this.state.percentages) {
-            totalPercent += x;
+        let i;
+        for (i = 0; i < percentageArray.length; ++i) {
+            totalPercent += parseFloat(percentageArray[i]);
         }
 
         return (
-            <table>
-                <th>Expenditures</th>
-                <tr>
-                    Monthly salary:
+            <table id={"budget-table"}>
+                <th id={"expenditure-header"}>Expenditures</th>
+                <tr id={"first-row"}>
+                    Monthly salary: &nbsp;
                     <input type="number" value={this.state.salary} autoFocus={true}
                            onChange={this.handleSalaryChange}/>
                 </tr>
+                <ExpenditureTable percentages={this.state.percentages}
+                                  functions={functionArray}
+                                  salary={this.state.salary}
+                />
                 <tr>
-                    <ExpenditureTable percentages={this.state.percentages}
-                                      functions={functionArray}
-                                      salary={this.state.salary}
-                    />
-                </tr>
-                <tr>
-                    Total percent: {totalPercent*100}%
+                    Total percent: {(totalPercent * 100).toFixed(1)}%
                 </tr>
             </table>
         );
@@ -180,14 +190,14 @@ function ExpenditureChange(parameters) {
             />
         </div>
     );
-};
+}
 
 function ExpenditureRow(parameters) {
     return (
-        <tr>
+        <tr id={"expenditure-row"}>
             <td>{parameters.category} ({(parameters.percent * 100).toFixed(2)}%):</td>
-            <td>{(parameters.percent * parameters.salary).toFixed(2)}</td>
-            <td>
+            <td id={"salary-column"}>{(parameters.percent * parameters.salary).toFixed(2)}</td>
+            <td id={"submit-column"}>
                 <ExpenditureChange
                     perc={parameters.percent}
                     func={parameters.function}
@@ -195,7 +205,7 @@ function ExpenditureRow(parameters) {
             </td>
         </tr>
     );
-};
+}
 
 function ExpenditureTable(parameters) {
     return (
@@ -250,7 +260,7 @@ function ExpenditureTable(parameters) {
             />
         </div>
     );
-};
+}
 
 
 export default BudgetPage2;

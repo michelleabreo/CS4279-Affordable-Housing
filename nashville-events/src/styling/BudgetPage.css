@@ -1,23 +1,27 @@
-table {
-    width: 30%;
-    position: absolute;
-    left: 1%;
+#expenditure-header {
+    font-size: 20px;
 }
-th{
-    width: 100%;
-}
-
-.allocationElt {
-    padding-left: 10%;
+#budget-table {
+    border-collapse:separate;
+    border-spacing:1em;
 }
 
-.Title {
-    position: relative;
-    left: 1%;
+#first-row {
+    padding-bottom: 1em;
 }
 
-.totalElt {
-    padding-bottom: 10%;
+#salary-field {
+    padding-left: 5px;
 }
 
+#expenditure-row {
+    padding-bottom: 5em;
+}
 
+#salary-column {
+    padding-left: 1em;
+}
+
+#submit-column {
+    padding-left: 2em;
+}
