@@ -263,4 +263,4 @@ function ExpenditureTable(parameters) {
 }
 
 
-export default BudgetPage;
+export default BudgetPage2;
