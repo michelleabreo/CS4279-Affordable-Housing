@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9fee32aa-fc51-4e33-8d0f-03f37b0a0a02" name="Default Changelist" comment="Merge branch 'evan'&#10;&#10;# Conflicts:&#10;#&#9;nashville-events/src/main.jsx">
-      <change afterPath="$PROJECT_DIR$/crawlers/zillowCrawler.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.html" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.js" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nashville-events/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -22,10 +21,58 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="58">
-              <caret line="137" column="9" selection-start-line="121" selection-start-column="8" selection-end-line="137" selection-end-column="9" />
+            <state relative-caret-position="194">
+              <caret line="248" column="9" selection-start-line="248" selection-start-column="9" selection-end-line="248" selection-end-column="9" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/index.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2155">
+              <caret line="152" column="46" selection-start-line="152" selection-start-column="46" selection-end-line="152" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/firebase.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="36" selection-start-column="36" selection-end-column="36" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/App.test.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,11 +87,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/Mayor's Office Meeting.txt">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/nashville-events/src/main.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+            <state relative-caret-position="225">
+              <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -53,22 +105,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js">
+        <entry file="file://$PROJECT_DIR$/nashville-events/src/events-page/event-fetcher/nashvilleEvents.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="165" column="20" selection-start-line="165" selection-start-column="20" selection-end-line="165" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-                <element signature="n#!!block;n#handleSalaryChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleHousingPercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleInsurancePercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleTransportationPercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleUtilitiesPercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleSavingsPercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleFunPercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handleClothingPercentChange#0;n#Budget#0" />
-                <element signature="n#!!block;n#handlePersonalPercentChange#0;n#Budget#0" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -126,9 +166,12 @@
         <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPag2.js" />
         <option value="$PROJECT_DIR$/crawlers/zillowCrawler.py" />
         <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js" />
-        <option value="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" />
         <option value="$PROJECT_DIR$/nashville-events/src/components/BudgetPage2.js" />
+        <option value="$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css" />
         <option value="$PROJECT_DIR$/nashville-events/src/main.jsx" />
+        <option value="$PROJECT_DIR$/nashville-events/src/App.test.js" />
+        <option value="$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.js" />
+        <option value="$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.html" />
       </list>
     </option>
   </component>
@@ -144,7 +187,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -161,6 +203,12 @@
               <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
               <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
+              <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
+              <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
+              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
@@ -186,26 +234,22 @@
               <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
               <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="events-page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS4279-Affordable-Housing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS4279-Affordable-Housing" type="462c0819:PsiDirectoryNode" />
-              <item name="nashville-events" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="styling" type="462c0819:PsiDirectoryNode" />
+              <item name="JSFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -250,6 +294,8 @@
       <workItem from="1552939665441" duration="4404000" />
       <workItem from="1553113541366" duration="5925000" />
       <workItem from="1553455737468" duration="1447000" />
+      <workItem from="1553891438129" duration="14000" />
+      <workItem from="1553891488460" duration="1508000" />
     </task>
     <task id="LOCAL-00001" summary="First draft budget page">
       <created>1548281770212</created>
@@ -311,12 +357,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51994000" />
+    <option name="totallyTimeSpent" value="53623000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3516561" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3516561" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -328,7 +375,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29036143" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2879518" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32891566" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -399,15 +446,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/budget-page/src/BudgetPage.js" />
-    <entry file="file://$PROJECT_DIR$/nashville-events/src/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nashville-events/src/events-page/EventCard.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -440,21 +478,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nashville-events/src/firebase.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="36" selection-start-column="36" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/plan_02_06.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/learning_02_27" />
     <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/artifact_03_11" />
-    <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/Mayor's Office Meeting.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/nashville-events/src/components/Subcomponents.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -476,34 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nashville-events/src/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/nashville-events/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="58">
-          <caret line="137" column="9" selection-start-line="121" selection-start-column="8" selection-end-line="137" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -526,13 +526,91 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/events-page/event-fetcher/nashvilleEvents.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/event-fetcher/gracetried.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/plan_02_06.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/learning_02_27">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/nashville-events/src/main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="7" lean-forward="true" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
+        <state relative-caret-position="225">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/artifacts/Mayor's Office Meeting.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/styling/BudgetPage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/components/BudgetPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="248" column="9" selection-start-line="248" selection-start-column="9" selection-end-line="248" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/firebase.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="36" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/App.test.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2155">
+          <caret line="152" column="46" selection-start-line="152" selection-start-column="46" selection-end-line="152" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nashville-events/src/JSFiles/GMaps.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
         </state>
       </provider>
     </entry>

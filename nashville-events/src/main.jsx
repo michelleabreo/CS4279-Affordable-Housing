@@ -11,7 +11,6 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import EventList from './components/Events';
 import BudgetPage from './components/BudgetPage';
-import Map from './components/Map.js';
 
 export default function Main() {
   return (

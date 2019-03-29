@@ -2,6 +2,7 @@ let map;
 let filteredMap;
 let nonFilteredMap;
 let nHoodData;
+// import firebase from 'src/firebase.js'
 
 function usdFormat(x) {
   return x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
@@ -134,3 +135,29 @@ document.getElementById('allHoods').onclick = function () {
 document.getElementById('pricedHoods').onclick = function () {
   switchToFilteredMap();
 };
+
+
+//Note for commit log: While this code does not look like much, I spent a lot of time learning specifics of
+// Firebase and how to implement the database in this script.
+
+/*
+const pathToTheSalary = 'I dont yet know the path. Need to configure database with Michelle.';
+const userSalaryRef = firebase.database().ref(pathToTheSalary);
+let userSalary;
+userSalaryRef.on('value',function (snapshot) {
+  userSalary = snapshot.val();
+});
+
+const pathToTheRent = 'same situation as above';
+const userRentPercRef = firebase.database().ref(pathToTheRent);
+userRentPercRef.on('value', function(snapshot) {
+  document.getElementById('pRent').innerHTML = 'Ideal rent: $' + snapshot.val()*userSalary;
+});
+
+const pathToWorkLocation = 'same....';
+const userWorkLocRef = firebase.database().ref(pathToWorkLocation);
+userWorkLocRef.on('value', function(snapshot) {
+  document.getElementById('pWorkLocation').innerHTML = 'Work Location:' + snapshot.val();
+});
+
+*/
