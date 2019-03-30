@@ -2,9 +2,43 @@ let map;
 let filteredMap;
 let nonFilteredMap;
 let nHoodData;
+let yelpGroceries;
 
 function usdFormat(x) {
   return x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+}
+
+function sortJSONbyPrice(json) {
+  const sArray = [];
+  for (const i in json) {
+    const jsonData = json[i];
+    if (jsonData.price != undefined) {
+      const yelpInfo = {
+        name: jsonData.name,
+        price: jsonData.price,
+        rating: jsonData.rating,
+        address: jsonData.location.address1,
+        url: jsonData.url,
+      };
+      sArray.push([json[i].price, yelpInfo]);
+    }
+  }
+  const resultArray = sArray.sort().reverse();
+  if (resultArray.length > 3) {
+    return resultArray.slice(0, 3);
+  }
+}
+
+function getYelpData(lat, lng) {
+  console.log('Initiaiting Yelp Call...');
+  const xmlHttp = new XMLHttpRequest();
+  const url = `http://localhost:3001/groceries/${lat}/${lng}`;
+  console.log(xmlHttp);
+  xmlHttp.open('GET', url, false); // false for synchronous request
+  xmlHttp.send(null);
+  console.log('Finished!');
+  const jsonResponse = JSON.parse(xmlHttp.responseText).businesses;
+  return sortJSONbyPrice(jsonResponse);
 }
 
 function buildInfoCard() {
@@ -15,8 +49,6 @@ function buildInfoCard() {
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
   });
-  // document.getElementById('nName').innerHTML = nHoodData.Name;
-  // document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
   return infowindow;
 }
 
@@ -38,22 +70,23 @@ function initMap() {
   let infoWindow;
   let marker;
   let open = false;
-  
+
   map.data.addListener('mouseover', (event) => {
-    if(infoWindow==null){
+    if (infoWindow == null) {
       map.data.revertStyle();
       map.data.overrideStyle(event.feature, { fillColor: 'white' });
       nHoodData = event.feature.l;
       // update the side window
       document.getElementById('nName').innerHTML = nHoodData.Name;
-      document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
-
+      document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(
+        nHoodData.zindex,
+      )}`;
     }
   });
 
   map.data.addListener('click', (event) => {
     map.data.revertStyle();
-    if(open){
+    if (open) {
       marker.setMap(null); // reset our cards if clicking new neighborhood
       infoWindow.close();
       open = false;
@@ -62,7 +95,9 @@ function initMap() {
     nHoodData = event.feature.l;
     infoWindow = buildInfoCard();
     document.getElementById('nName').innerHTML = nHoodData.Name;
-    document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(nHoodData.zindex)}`;
+    document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(
+      nHoodData.zindex,
+    )}`;
     const lat = event.latLng.lat();
     const lng = event.latLng.lng();
     console.log(lat);
@@ -75,7 +110,8 @@ function initMap() {
       map,
       title: 'RegionID',
     });
-    infoWindow.open(map, marker)
+    infoWindow.open(map, marker);
+    yelpGroceries = getYelpData(lat, lng);
     open = true;
   });
 
@@ -122,9 +158,17 @@ function switchToFullMap() {
   google.maps.event.trigger(map, 'resize');
 }
 
+function showYelpData() {
+  console.log(yelpGroceries);
+}
+
 document.getElementById('zillowBtn').onclick = function () {
   const url = `https://www.zillow.com/homes/for_rent/${nHoodData.Name}-nashville-tn/`;
   window.open(url, '_blank');
+};
+
+document.getElementById('yelpBtn').onclick = function () {
+  showYelpData();
 };
 
 document.getElementById('allHoods').onclick = function () {
