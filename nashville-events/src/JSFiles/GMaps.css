@@ -38,6 +38,10 @@ h3 {
 h4 {
   font-family: "Montserrat";
 }
+h5 {
+  font-family: "Montserrat";
+  color: darkolivegreen;
+}
 .mapTitle {
   margin-left: 1%;
 }

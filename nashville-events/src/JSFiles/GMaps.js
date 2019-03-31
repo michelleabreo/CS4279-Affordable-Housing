@@ -3,6 +3,7 @@ let filteredMap;
 let nonFilteredMap;
 let nHoodData;
 let yelpGroceries;
+let yelpDaycares;
 
 function usdFormat(x) {
   return x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
@@ -29,16 +30,39 @@ function sortJSONbyPrice(json) {
   }
 }
 
-function getYelpData(lat, lng) {
+function sortJSONbyRating(json) {
+  const sArray = [];
+  for (const i in json) {
+    const jsonData = json[i];
+    const yelpInfo = {
+      name: jsonData.name,
+      price: jsonData.price,
+      rating: jsonData.rating,
+      address: jsonData.location.address1,
+      url: jsonData.url,
+    };
+    sArray.push([json[i].rating, yelpInfo]);
+  }
+  const resultArray = sArray.sort().reverse();
+  if (resultArray.length > 3) {
+    return resultArray.slice(0, 3);
+  }
+}
+
+function getYelpData(lat, lng, type) {
   console.log('Initiaiting Yelp Call...');
   const xmlHttp = new XMLHttpRequest();
-  const url = `http://localhost:3001/groceries/${lat}/${lng}`;
+  const url = `http://localhost:3001/${type}/${lat}/${lng}`;
   console.log(xmlHttp);
   xmlHttp.open('GET', url, false); // false for synchronous request
   xmlHttp.send(null);
   console.log('Finished!');
   const jsonResponse = JSON.parse(xmlHttp.responseText).businesses;
-  return sortJSONbyPrice(jsonResponse);
+  console.log(jsonResponse);
+  if (type === 'groceries') {
+    return sortJSONbyPrice(jsonResponse);
+  }
+  return sortJSONbyRating(jsonResponse);
 }
 
 function buildInfoCard() {
@@ -50,6 +74,29 @@ function buildInfoCard() {
     content: contentString,
   });
   return infowindow;
+}
+
+function buildYelpCard(data, type) {
+  const yelpDiv = document.createElement('div');
+  const yelpTitle = document.createElement('h4');
+  yelpTitle.innerHTML = data.name;
+  yelpDiv.appendChild(yelpTitle);
+  if (type === 'groceries') {
+    const yelpPrice = document.createElement('h5');
+    yelpPrice.innerHTML = `Price: ${data.price}`;
+    yelpDiv.appendChild(yelpPrice);
+  }
+  const yelpRating = document.createElement('h5');
+  yelpRating.innerHTML = `Rating: ${data.rating}`;
+  yelpDiv.appendChild(yelpRating);
+  const yelpStreet = document.createElement('h5');
+  yelpStreet.innerHTML = `Street: ${data.address}`;
+  yelpDiv.appendChild(yelpStreet);
+  // const yelpLink = document.createElement('a');
+  // yelpLink.href = data.url;
+  // yelpLink.innerHTML = 'Visit Site';
+  // yelpDiv.appendChild(yelpLink);
+  return yelpDiv;
 }
 
 function initMap() {
@@ -111,14 +158,11 @@ function initMap() {
       title: 'RegionID',
     });
     infoWindow.open(map, marker);
-    yelpGroceries = getYelpData(lat, lng);
+    yelpGroceries = getYelpData(lat, lng, 'groceries');
+    yelpDaycares = getYelpData(lat, lng, 'childcare');
+    console.log(yelpDaycares);
     open = true;
   });
-
-  // map.data.addListener(infoWindow, 'closeclick', function() {
-  //   map.data.revertStyle();
-  //   open = false;
-  // });
 
   map.data.addListener('mouseout', () => {
     map.data.revertStyle();
@@ -158,8 +202,16 @@ function switchToFullMap() {
   google.maps.event.trigger(map, 'resize');
 }
 
-function showYelpData() {
-  console.log(yelpGroceries);
+function showYelpData(type) {
+  console.log(type);
+  document.getElementById('yelpContent').innerHTML = '';
+  let dataSrc = yelpDaycares;
+  if (type === 'groceries') {
+    dataSrc = yelpGroceries;
+  }
+  dataSrc.forEach((element) => {
+    document.getElementById('yelpContent').appendChild(buildYelpCard(element[1], type));
+  });
 }
 
 document.getElementById('zillowBtn').onclick = function () {
@@ -167,8 +219,12 @@ document.getElementById('zillowBtn').onclick = function () {
   window.open(url, '_blank');
 };
 
-document.getElementById('yelpBtn').onclick = function () {
-  showYelpData();
+document.getElementById('groceryBtn').onclick = function () {
+  showYelpData('groceries');
+};
+
+document.getElementById('dayCareBtn').onclick = function () {
+  showYelpData('daycare');
 };
 
 document.getElementById('allHoods').onclick = function () {
