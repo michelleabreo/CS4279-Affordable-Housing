@@ -220,11 +220,19 @@ document.getElementById('zillowBtn').onclick = function () {
 };
 
 document.getElementById('groceryBtn').onclick = function () {
-  showYelpData('groceries');
+  if (yelpGroceries) {
+    showYelpData('groceries');
+  } else {
+    window.alert('Please choose a neighborhood!');
+  }
 };
 
 document.getElementById('dayCareBtn').onclick = function () {
-  showYelpData('daycare');
+  if (yelpDaycares) {
+    showYelpData('daycare');
+  } else {
+    window.alert('Please choose a neighborhood!');
+  }
 };
 
 document.getElementById('allHoods').onclick = function () {

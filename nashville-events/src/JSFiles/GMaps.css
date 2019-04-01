@@ -13,10 +13,11 @@
 }
 #neighborhoodInfo {
   margin-left: 77%;
+  color: #083763;
 }
-
-/* Optional: Makes the sample page fill the window. */
-
+#neighborhoodInfo button {
+  color: #083763;
+}
 html,
 body {
   height: 100%;
@@ -40,7 +41,7 @@ h4 {
 }
 h5 {
   font-family: "Montserrat";
-  color: darkolivegreen;
+  color: #36454f;
 }
 .mapTitle {
   margin-left: 1%;
