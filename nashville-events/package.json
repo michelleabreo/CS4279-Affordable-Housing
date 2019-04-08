@@ -8,7 +8,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.7.1",
     "@fortawesome/react-fontawesome": "^0.1.4",
     "axios": "^0.18.0",
-    "bootstrap": "^4.2.1",
+    "bootstrap": "^3.4.1",
     "cors": "^2.8.5",
     "firebase": "^5.8.1",
     "google-maps-react": "^2.0.2",
