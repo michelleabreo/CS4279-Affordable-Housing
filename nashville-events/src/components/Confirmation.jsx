@@ -1,9 +1,47 @@
 import React, { Component } from 'react';
 import {Button, Form, List, Grid} from 'semantic-ui-react';
+const firebase = require('firebase');
+require('firebase/firestore');
+
+const db = firebase.firestore();
 
 class Confirmation extends Component{
-    saveAndContinue = (e) => {
-        e.preventDefault();
+
+    pushToFirebase(values) {
+        console.log(values[0]);
+        db.collection('users')
+            .add({
+                Name: values[0] + " " + values[1],
+                Email: values[2],
+                Income: values[3],
+                Family_Size: values[4],
+                Number_of_Bedrooms: values[5],
+                Number_of_Bathrooms: values[6]
+            })
+            .then(() => {
+                console.log('Document successfully written!');
+            })
+            .catch((error) => {
+                console.error('Error writing document: ', error);
+            });
+    }
+
+    saveAndContinue(vals, e) {
+
+        if (!firebase.apps.length) {
+            firebase.initializeApp({
+                apiKey: 'AIzaSyC3VoNgu4Vpep3bUWK6_kMUb3Ag_9Pnu6g',
+                authDomain: 'housing-project-7e733.firebaseapp.com',
+                databaseURL: 'https://housing-project-7e733.firebaseio.com',
+                projectId: 'housing-project-7e733',
+                storageBucket: 'housing-project-7e733.appspot.com',
+                messagingSenderId: '378164429411',
+            });
+        }
+
+        this.pushToFirebase(vals);
+
+        //e.preventDefault();
         this.props.nextStep();
     }
 
@@ -14,6 +52,7 @@ class Confirmation extends Component{
 
     render(){
         const {values: { firstName, lastName, email, income, familySize, numBedroom, numBathroom }} = this.props;
+        const vals = [firstName, lastName, email, income, familySize, numBedroom, numBathroom];
 
         return(
             <Grid container>
@@ -47,12 +86,10 @@ class Confirmation extends Component{
                             </List.Item>
                         </List>
                         <Button onClick={this.back}>Back</Button>
-                        <Button onClick={this.saveAndContinue}>Confirm</Button>
-
+                        <Button onClick={this.saveAndContinue(vals)}>Confirm</Button>
                     </div>
                 </Grid.Column>
             </Grid>
-
         )
     }
 }
