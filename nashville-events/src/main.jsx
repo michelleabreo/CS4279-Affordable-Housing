@@ -47,6 +47,10 @@ export default function Main() {
                     Budget
                   </Link>
                 </li>
+                <li>
+                <a href="/GMaps.html">Maps</a>
+                // <Route exact path="/maps" render={() => {window.location.href="./src/GMaps.html"}} />
+                </li>
               </ul>
             </div>
           </div>
@@ -55,6 +59,7 @@ export default function Main() {
           <Route exact path="/" component={Home} />
           <Route path="/events" component={EventList} />
           <Route path="/budget" component={BudgetPage} />
+          // <Route path="/budget" component={BudgetPage} />
         </Switch>
         <Footer />
       </div>
