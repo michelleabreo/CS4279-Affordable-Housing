@@ -2,8 +2,9 @@ let map;
 let filteredMap;
 let nonFilteredMap;
 let nHoodData;
-let yelpGroceries;
-let yelpDaycares;
+let yelpResults;
+let lat;
+let lng;
 
 function usdFormat(x) {
   return x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
@@ -76,26 +77,20 @@ function buildInfoCard() {
   return infowindow;
 }
 
-function buildYelpCard(data, type) {
+function buildYelpCard(data) {
   const yelpDiv = document.createElement('div');
   const yelpTitle = document.createElement('h4');
   yelpTitle.innerHTML = data.name;
   yelpDiv.appendChild(yelpTitle);
-  if (type === 'groceries') {
-    const yelpPrice = document.createElement('h5');
-    yelpPrice.innerHTML = `Price: ${data.price}`;
-    yelpDiv.appendChild(yelpPrice);
-  }
+  const yelpPrice = document.createElement('h5');
+  yelpPrice.innerHTML = `Price: ${data.price}`;
+  yelpDiv.appendChild(yelpPrice);
   const yelpRating = document.createElement('h5');
   yelpRating.innerHTML = `Rating: ${data.rating}`;
   yelpDiv.appendChild(yelpRating);
   const yelpStreet = document.createElement('h5');
   yelpStreet.innerHTML = `Street: ${data.address}`;
   yelpDiv.appendChild(yelpStreet);
-  // const yelpLink = document.createElement('a');
-  // yelpLink.href = data.url;
-  // yelpLink.innerHTML = 'Visit Site';
-  // yelpDiv.appendChild(yelpLink);
   return yelpDiv;
 }
 
@@ -145,8 +140,8 @@ function initMap() {
     document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(
       nHoodData.zindex,
     )}`;
-    const lat = event.latLng.lat();
-    const lng = event.latLng.lng();
+    lat = event.latLng.lat();
+    lng = event.latLng.lng();
     console.log(lat);
     console.log(lng);
     marker = new google.maps.Marker({
@@ -158,9 +153,6 @@ function initMap() {
       title: 'RegionID',
     });
     infoWindow.open(map, marker);
-    yelpGroceries = getYelpData(lat, lng, 'groceries');
-    yelpDaycares = getYelpData(lat, lng, 'childcare');
-    console.log(yelpDaycares);
     open = true;
   });
 
@@ -202,15 +194,10 @@ function switchToFullMap() {
   google.maps.event.trigger(map, 'resize');
 }
 
-function showYelpData(type) {
-  console.log(type);
+function showYelpData(dataSrc) {
   document.getElementById('yelpContent').innerHTML = '';
-  let dataSrc = yelpDaycares;
-  if (type === 'groceries') {
-    dataSrc = yelpGroceries;
-  }
   dataSrc.forEach((element) => {
-    document.getElementById('yelpContent').appendChild(buildYelpCard(element[1], type));
+    document.getElementById('yelpContent').appendChild(buildYelpCard(element[1]));
   });
 }
 
@@ -219,19 +206,13 @@ document.getElementById('zillowBtn').onclick = function () {
   window.open(url, '_blank');
 };
 
-document.getElementById('groceryBtn').onclick = function () {
-  if (yelpGroceries) {
-    showYelpData('groceries');
-  } else {
-    window.alert('Please choose a neighborhood!');
-  }
-};
-
-document.getElementById('dayCareBtn').onclick = function () {
-  if (yelpDaycares) {
-    showYelpData('daycare');
-  } else {
-    window.alert('Please choose a neighborhood!');
+document.getElementById('searchBtn').onclick = function () {
+  console.log('whatsup');
+  const query = document.getElementById('queryForm').value;
+  console.log(query);
+  yelpResults = getYelpData(lat, lng, query);
+  if (yelpResults) {
+    showYelpData(yelpResults);
   }
 };
 
