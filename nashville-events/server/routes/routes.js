@@ -6,37 +6,53 @@ const client = yelp.client(
 
 const appRouter = function (app) {
   app.get('/', (req, res) => {
-    res
-      .status(200)
-      .send({
-        message:
-          'Welcome to our yelp call API the allowed calls are get/groceries and get/childcare',
-      });
+    res.status(200).send({
+      message: 'Welcome to our yelp call API the allowed calls are get/groceries and get/childcare',
+    });
   });
 
-  app.get('/groceries/:lat/:long', (req, res) => {
+  // app.get('/groceries/:lat/:long', (req, res) => {
+  //   const lat = req.params.lat;
+  //   const long = req.params.long;
+  //   client
+  //     .search({
+  //       term: 'groceries',
+  //       latitude: lat,
+  //       longitude: long,
+  //     })
+  //     .then((response) => {
+  //       res.status(200).send(response.jsonBody);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // });
+
+  // app.get('/childcare/:lat/:long', (req, res) => {
+  //   const lat = req.params.lat;
+  //   const long = req.params.long;
+  //   client
+  //     .search({
+  //       term: 'childcare',
+  //       latitude: lat,
+  //       longitude: long,
+  //     })
+  //     .then((response) => {
+  //       res.status(200).send(response.jsonBody);
+  //     })
+  //     .catch((e) => {
+  //       console.log(e);
+  //     });
+  // });
+  // };
+
+  app.get('/:query/:lat/:long', (req, res) => {
+    const query = req.params.query;
     const lat = req.params.lat;
     const long = req.params.long;
     client
       .search({
-        term: 'groceries',
-        latitude: lat,
-        longitude: long,
-      })
-      .then((response) => {
-        res.status(200).send(response.jsonBody);
-      })
-      .catch((e) => {
-        console.log(e);
-      });
-  });
-
-  app.get('/childcare/:lat/:long', (req, res) => {
-    const lat = req.params.lat;
-    const long = req.params.long;
-    client
-      .search({
-        term: 'childcare',
+        term: query,
         latitude: lat,
         longitude: long,
       })
