@@ -185,4 +185,22 @@ h5 {
 }
 .maps-button button {
   margin-left: 1%;
+  color: #36454f;
+}
+.maps-button input {
+  margin-left: 2%;
+  color: #36454f;
+  margin-bottom: 5%;
+}
+.maps-button h5 {
+  padding-top: 0%;
+  margin-left: 2%;
+  color: #36454f;
+  font-size: 1.5ch;
+}
+
+.maps-button h5 {
+  padding-top: 0%;
+  margin-left: 2%;
+  font-size: 1.7ch;
 }

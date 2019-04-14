@@ -46,9 +46,12 @@
       <div id="neighborhoodInfo"></div>
     </div>
     <div class="maps-button">
-      <!-- <button onclick="switchToFullMap()">All Neighborhoods</button>
-      <button onclick="switchToFilteredMap()">Priced Neighborhoods</button> -->
       <h3>Showing only neighborhoods with rentals available.</h3>
+      <h5>Price Filter</h5>
+      <input type="number" id="priceMin" placeholder="Min" />
+      <input type="number" id="priceMax" placeholder="Max" />
+      <button id="filterBtn">Filter</button>
+      <button id="resetBtn">Reset</button>
     </div>
     <script src="./GMaps.js"></script>
     <script

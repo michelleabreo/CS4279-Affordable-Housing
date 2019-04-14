@@ -26,8 +26,8 @@ function sortJSONbyPrice(json) {
     }
   }
   const resultArray = sArray.sort().reverse();
-  if (resultArray.length > 3) {
-    return resultArray.slice(0, 3);
+  if (resultArray.length > 5) {
+    return resultArray.slice(0, 5);
   }
 }
 
@@ -45,8 +45,8 @@ function sortJSONbyRating(json) {
     sArray.push([json[i].rating, yelpInfo]);
   }
   const resultArray = sArray.sort().reverse();
-  if (resultArray.length > 3) {
-    return resultArray.slice(0, 3);
+  if (resultArray.length > 5) {
+    return resultArray.slice(0, 5);
   }
 }
 
@@ -60,10 +60,10 @@ function getYelpData(lat, lng, type) {
   console.log('Finished!');
   const jsonResponse = JSON.parse(xmlHttp.responseText).businesses;
   console.log(jsonResponse);
-  if (type === 'groceries') {
-    return sortJSONbyPrice(jsonResponse);
+  if (type === 'daycare') {
+    return sortJSONbyRating(jsonResponse);
   }
-  return sortJSONbyRating(jsonResponse);
+  return sortJSONbyPrice(jsonResponse);
 }
 
 function buildInfoCard() {
@@ -100,7 +100,7 @@ function initMap() {
 
   map = new google.maps.Map(document.getElementById('map'), {
     center: { lat: 36.1627, lng: -86.7816 },
-    zoom: 14,
+    zoom: 12,
   });
   map.data.setStyle({
     fillColor: '#FFA500',
@@ -192,7 +192,7 @@ function switchToFilteredMap() {
 function switchToFullMap() {
   map.data.setStyle({});
   map.data.loadGeoJson(
-    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
+    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_rentals.geojson',
   );
   map.data.setStyle({
     fillColor: '#FFA500',
@@ -206,6 +206,22 @@ function showYelpData(dataSrc) {
   dataSrc.forEach((element) => {
     document.getElementById('yelpContent').appendChild(buildYelpCard(element[1]));
   });
+}
+
+function filterByRentalPrice(minVal, maxVal) {
+  map.data.setStyle({});
+  google.maps.event.addListenerOnce(map, 'idle', () => {
+    map.data.forEach((feature) => {
+      if (feature.l.AvgRental < minVal || feature.l.AvgRental > maxVal) {
+        map.data.remove(feature);
+      }
+    });
+  });
+  map.data.setStyle({
+    fillColor: '#FFA500',
+    strokeWeight: 1,
+  });
+  google.maps.event.trigger(map, 'resize');
 }
 
 document.getElementById('zillowBtn').onclick = function () {
@@ -226,10 +242,18 @@ document.getElementById('searchBtn').onclick = function () {
   }
 };
 
-document.getElementById('allHoods').onclick = function () {
-  switchToFullMap();
+document.getElementById('filterBtn').onclick = function () {
+  const minVal = document.getElementById('priceMin').value;
+  const maxVal = document.getElementById('priceMax').value;
+  if (minVal < 0 || maxVal < 0) {
+    window.alert('Please have positive values when filtering!');
+  }
+  if (minVal >= maxVal) {
+    window.alert('The max value must be greater than the minimum.');
+  }
+  filterByRentalPrice(minVal, maxVal);
 };
 
-document.getElementById('pricedHoods').onclick = function () {
-  switchToFilteredMap();
+document.getElementById('resetBtn').onclick = function () {
+  switchToFullMap();
 };
