@@ -1,57 +1,65 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Nashville Neighborhoods</title>
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-            integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-            crossorigin="anonymous">
-        <link rel="stylesheet" type="text/css" href="./GMaps.css">
-        <meta charset="utf-8" />
-    </head>
-    <body>
-        <div class="mapTitle"> <h1>Nashville Affordability Map</h1> </div>
-        <div id="mapBox">
-            <div id="map"></div>
-            <div id="neighborhoodTitleBox">
-                <h2>Neighborhood Information</h2>
-            </div>
-            <div id="nNameBox">
-                <h5 id="nashvilleSubname">Nashville</h5>
-                <h3 id="nName">Name</h3>
-            </div>
-            <div id="nHoodFinancials">
-                <h5 id="nashvilleSubname">Financials</h5>
-                <h3 id="nAvgVal">Avg. Home Value:</h3>
-                <h3 id="nAvgRent">Avg. Rent Cost:</h3>
-                <button id="zillowBtn">Access Zillow</button>
-            </div>
-            <div class="nSpecifics">
-                <h3 id="nCharacteristics">Nearby Locales</h3>
-                <div id="yelpBtnBar">
-                    <!-- <button id="groceryBtn">Groceries</button>
+  <head>
+    <title>Nashville Neighborhoods</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+      />
+    <link rel="stylesheet" type="text/css" href="./GMaps.css" />
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <div class="mapTitle"><h1>Nashville Affordability Map</h1></div>
+    <div id="mapBox">
+      <div id="map"></div>
+      <div id="neighborhoodTitleBox">
+        <h2>Neighborhood Information</h2>
+      </div>
+      <div id="nNameBox">
+        <h5 id="nashvilleSubname">Nashville</h5>
+        <h3 id="nName">Name</h3>
+      </div>
+      <div id="nHoodFinancials">
+        <h5 id="nashvilleSubname">Financials</h5>
+        <h3 id="nAvgVal">Avg. Home Value:</h3>
+        <h3 id="nAvgRent">Avg. Rent Cost:</h3>
+        <button id="zillowBtn">Access Zillow</button>
+      </div>
+      <div class="nSpecifics">
+        <h3 id="nCharacteristics">Nearby Locales</h3>
+        <div id="yelpBtnBar">
+          <!-- <button id="groceryBtn">Groceries</button>
                     <button id="dayCareBtn">Daycares</button> -->
-                    <input type="text" id="queryForm" class="nForm"
-                        placeholder="Try 'Restraunt'">
-                    <button id="searchBtn">Search</button>
-                    <div id="yelpContent"></div>
-                </div>
-
-            </div>
-            <div id="neighborhoodInfo">
-            </div>
+          <input
+            type="text"
+            id="queryForm"
+            class="nForm"
+            placeholder="Try 'Restraunt'"
+            />
+          <button id="searchBtn">Search</button>
+          <div id="yelpContent"></div>
         </div>
-        <div class="maps-button">
-            <button onclick="switchToFullMap()">All Neighborhoods</button>
-            <button onclick="switchToFilteredMap()">Priced Neighborhoods</button>
-        </div>
-    </body>
+      </div>
+      <div id="neighborhoodInfo"></div>
+    </div>
+    <div class="maps-button">
+      <!-- <button onclick="switchToFullMap()">All Neighborhoods</button>
+      <button onclick="switchToFilteredMap()">Priced Neighborhoods</button> -->
+      <h3>Showing only neighborhoods with rentals available.</h3>
+    </div>
     <script src="./GMaps.js"></script>
     <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqZd-d-PeOiuVdmR5qwkln9lD74WUw5VU&callback=initMap"
-        async defer></script>
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDqZd-d-PeOiuVdmR5qwkln9lD74WUw5VU&callback=initMap"
+      async
+      defer></script>
     <script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script>
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"></script>
+  </body>
 </html>

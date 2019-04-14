@@ -1,10 +1,10 @@
 let map;
-let filteredMap;
 let nonFilteredMap;
 let nHoodData;
 let yelpResults;
 let lat;
 let lng;
+let cityClicked;
 
 function usdFormat(x) {
   return x.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
@@ -123,6 +123,9 @@ function initMap() {
       document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(
         nHoodData.zindex,
       )}`;
+      document.getElementById('nAvgRent').innerHTML = `Avg. Rent Cost: ${usdFormat(
+        parseInt(nHoodData.AvgRental, 10),
+      )}`;
     }
   });
 
@@ -140,6 +143,9 @@ function initMap() {
     document.getElementById('nAvgVal').innerHTML = `Avg. Home Value: ${usdFormat(
       nHoodData.zindex,
     )}`;
+    document.getElementById('nAvgRent').innerHTML = `Avg. Rent Cost: ${usdFormat(
+      parseInt(nHoodData.AvgRental, 10),
+    )}`;
     lat = event.latLng.lat();
     lng = event.latLng.lng();
     console.log(lat);
@@ -154,6 +160,7 @@ function initMap() {
     });
     infoWindow.open(map, marker);
     open = true;
+    cityClicked = true;
   });
 
   map.data.addListener('mouseout', () => {
@@ -161,7 +168,7 @@ function initMap() {
   });
 
   nonFilteredMap = map.data.loadGeoJson(
-    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_w_index.geojson',
+    'https://raw.githubusercontent.com/michelleabreo/CS4279-Affordable-Housing/master/Maps/Zillow_rentals.geojson',
   );
 }
 
@@ -170,7 +177,7 @@ function switchToFilteredMap() {
   google.maps.event.addListenerOnce(map, 'idle', () => {
     map.data.forEach((feature) => {
       console.log(feature.l.zindex);
-      if (feature.l.zindex == 0) {
+      if (feature.l.zindex === 0) {
         map.data.remove(feature);
       }
     });
@@ -207,12 +214,15 @@ document.getElementById('zillowBtn').onclick = function () {
 };
 
 document.getElementById('searchBtn').onclick = function () {
-  console.log('whatsup');
-  const query = document.getElementById('queryForm').value;
-  console.log(query);
-  yelpResults = getYelpData(lat, lng, query);
-  if (yelpResults) {
-    showYelpData(yelpResults);
+  if (cityClicked) {
+    const query = document.getElementById('queryForm').value;
+    console.log(query);
+    yelpResults = getYelpData(lat, lng, query);
+    if (yelpResults) {
+      showYelpData(yelpResults);
+    }
+  } else {
+    window.alert('Please select a city before searching for a locale.');
   }
 };
 
