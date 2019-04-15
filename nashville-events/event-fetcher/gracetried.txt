@@ -126,4 +126,48 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
     I've tried all week to figure out how to pull data from firebase and print it out to the webpage but no luck:/
     Getting lots of errors about it not recognizing firebase even though it should
 
+    reached out to other group members and others at Vandy who have used Firebase, 
+    not successful 
+
+const firebase = require('firebase');
+require('firebase/firestore');
+const request = require('request');
+const cheerio = require('cheerio');
+let name = 'Grace';
+console.log(name);
+//console.log(printValues());
+
+firebase.initializeApp({
+  apiKey: 'AIzaSyC3VoNgu4Vpep3bUWK6_kMUb3Ag_9Pnu6g',
+  authDomain: 'housing-project-7e733.firebaseapp.com',
+  databaseURL: 'https://housing-project-7e733.firebaseio.com',
+  projectId: 'housing-project-7e733',
+  storageBucket: 'housing-project-7e733.appspot.com',
+  messagingSenderId: '378164429411',
+});
+
+const db = firebase.firestore();
+//console.log(db.get());
+
+
+function printValues() {
+  var cityRef = db.collection('nashville-events').doc('1ESaifVqrBISD6cto8YS');
+var getDoc = cityRef.get()
+  .then(doc => {
+    if (!doc.exists) {
+      console.log('No such document!');
+    } else {
+      console.log('Document data:', doc.data());
+    }
+  })
+  .catch(err => {
+    console.log('Error getting document', err);
+  });
+}
+
+console.log(printValues());
+
+END OF code
+
+
 4/8 and 4/10 working on the video!
