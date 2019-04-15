@@ -125,3 +125,5 @@ I had more that I put on here, but it didn't commit because I didn't save the fi
 4/1 
     I've tried all week to figure out how to pull data from firebase and print it out to the webpage but no luck:/
     Getting lots of errors about it not recognizing firebase even though it should
+
+4/8 and 4/10 working on the video!
